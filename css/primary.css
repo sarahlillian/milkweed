@@ -106,7 +106,40 @@ main {
 	width: 447px;
 }
 
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
 
+.how-it-works-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: 100%;
+	text-align: center;
+}
+
+.how-it-works-header {
+	padding: 0 1rem 1rem;
+}
+
+.how-it-works-header h2 {
+	font-size: 2.5rem;
+}
+
+.how-it-works-content {
+	padding: 1rem;
+	width: 100%;
+}
+
+.how-it-works-content h3 {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+.how-it-works-wrapper p {
+	font-size: .875rem;
+}
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
