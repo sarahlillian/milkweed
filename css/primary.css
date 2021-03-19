@@ -33,6 +33,10 @@ h1 {
 	font-size: 60px;
 }
 
+h2 {
+	font-size: 2rem;
+}
+
 /* Poppins */
 p {
 	font-family: 'Poppins', sans-serif;
@@ -104,6 +108,26 @@ main {
 .hero-content {
 	text-align: center;
 	width: 447px;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: 100%;
+}
+
+.about-content {
+	padding: 0 1rem 2rem;
+}
+
+.about-content p {
+	font-size: .875rem;
 }
 
 
