@@ -125,6 +125,7 @@ main {
 
 .how-it-works-header h2 {
 	font-size: 2.5rem;
+	padding-bottom: 1.125rem;
 }
 
 .how-it-works-content {
@@ -132,9 +133,14 @@ main {
 	width: 100%;
 }
 
+.how-it-works-content img {
+	padding-right: 5.75rem;
+	padding-left: 5.75rem;
+	width: 100%;
+}
 .how-it-works-content h3 {
 	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-bottom: .875rem;
 }
 
 .how-it-works-wrapper p {
