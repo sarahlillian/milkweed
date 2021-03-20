@@ -46,10 +46,9 @@ p {
 button {
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;	font-weight: 600;
-	text-transform: uppercase;
 	letter-spacing: 0.1em;
-  background-color: #003D35;
-  color: #FFFFFF;
+	background-color: #003D35;
+	color: #FFFFFF;
 	padding: 8px 16px;
 	border: 1px solid transparent;
 	border-radius: 30px;
