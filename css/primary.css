@@ -9,6 +9,7 @@
 
 body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	overflow: visible;
@@ -53,8 +54,8 @@ button {
 	font-family: 'Poppins', sans-serif;	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-  background-color: #003D35;
-  color: #FFFFFF;
+	background-color: #003D35;
+	color: #FFFFFF;
 	padding: 8px 16px;
 	border: 1px solid transparent;
 	border-radius: 30px;
@@ -94,8 +95,14 @@ nav {
 
 /* CONTENT --------------------------------------------------*/
 main {
-	display: flex;
 	justify-content: center;
+	min-height: 100vh;
+	flex: 1;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .hero-wrapper {
@@ -109,11 +116,6 @@ main {
 .hero-content {
 	text-align: center;
 	width: 447px;
-}
-
-.main-wrapper {
-	display: flex;
-	flex-direction: column;
 }
 
 .resources-wrapper {
@@ -149,12 +151,55 @@ main {
 .resources-content p {
 	font-size: .875rem;
 	padding-bottom: 1rem;
+=======
+/* FOOTER --------------------------------------------------*/
+
+footer p {
+	text-align: center;
+	color: #FFF;
+}
+
+footer {
+	flex-shrink: 0;
+	background-color: #333;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
+
+	header {
+		padding: 9px 0;
+	}
 	
-	/* CONTENT --------------------------------------------------*/
+	.logo {
+		position: relative;
+		left: 18px;
+	}
+
+	.logo img {
+		width: 136px;
+		height: auto;
+	}
+
+	button {
+		font-size: 0.875em;
+		background: transparent;
+		color: #333;
+		position: absolute;
+		top: 36px;
+		right: 18px;
+		padding: 0px;
+		border: none;
+	}
+
+	footer p {
+		font-size: 0.875em;
+		line-height: 1.3em;
+	}
 
 /*End @414px media query */
 }
