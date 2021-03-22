@@ -158,6 +158,7 @@ main {
 	flex-flow: row wrap;
 	max-width: 1440px;
 	width: 100%;
+}
 
 .resources-header {
 	text-align: center;
@@ -185,6 +186,7 @@ main {
 .resources-content p {
 	font-size: .875rem;
 	padding-bottom: 1rem;
+}
 
 /* FOOTER --------------------------------------------------*/
 
