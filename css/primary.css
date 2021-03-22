@@ -102,7 +102,6 @@ main {
 }
 
 .hero-content {
-	text-align: center;
 	width: 447px;
 }
 
@@ -110,6 +109,19 @@ main {
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
+
+	.hero-wrapper {
+		width: 300px;
+	}
+
+	.hero-content h1 {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	.hero-content p {
+		font-size: 14px;
+	}
 	
 	/* CONTENT --------------------------------------------------*/
 
