@@ -35,6 +35,11 @@ h1 {
 }
 
 /* Poppins */
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
 p {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -95,6 +100,11 @@ main {
 	flex: 1;
 }
 
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .hero-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
@@ -108,6 +118,40 @@ main {
 	width: 447px;
 }
 
+.resources-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: 100%;
+}
+
+.resources-header {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 4rem;
+}
+
+.resources-header h2 {
+	font-size: 2.5rem;
+}
+
+.resources-content {
+	border-radius: 1.25rem;
+	background-color: #EFEFEF;
+	margin: 0 1.25rem 2rem;
+	padding: 1.5rem .875rem 1.5rem;
+}
+
+.resources-content h4 {
+	font-size: 1rem;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+}
+
+.resources-content p {
+	font-size: .875rem;
+	padding-bottom: 1rem;
+=======
 /* FOOTER --------------------------------------------------*/
 
 footer p {
