@@ -49,7 +49,7 @@ button {
 	font-family: 'Poppins', sans-serif;	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	background-color: #003D35;
+	background-color: #333;
 	color: #FFFFFF;
 	padding: 8px 16px;
 	border: 1px solid transparent;
@@ -59,7 +59,7 @@ button {
 /* Button Hover */
 button:hover {
   background-color: #FFFFFF;
-  color: #003D35;
+  color: #333;
 }
 
 
@@ -127,35 +127,27 @@ footer {
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
 
-	header {
-		padding: 9px 0;
-	}
-	
-	.logo {
-		position: relative;
-		left: 18px;
-	}
+    header {
+        padding: 9px 0;
+    }
+    
+    .logo {
+        position: relative;
+        left: 18px;
+    }
 
-	.logo img {
-		width: 136px;
-		height: auto;
-	}
+    .logo img {
+        width: 64px;
+        height: auto;
+    }
 
-	button {
-		font-size: 0.875em;
-		background: transparent;
-		color: #333;
-		position: absolute;
-		top: 36px;
-		right: 18px;
-		padding: 0px;
-		border: none;
-	}
-
-	footer p {
-		font-size: 0.875em;
-		line-height: 1.3em;
-	}
+    button {
+        font-size: 0.875em;
+        position: absolute;
+        top: 24px;
+        right: 18px;
+        filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+    }
 
 /*End @414px media query */
 }
