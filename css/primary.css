@@ -53,6 +53,7 @@ button {
 	padding: 8px 16px;
 	border: 1px solid transparent;
 	border-radius: 30px;
+	box-shadow: 0px, 5px, 10px rgba(0 ,0, 0, 0.07);
 }
 
 /* Button Hover */
@@ -112,7 +113,7 @@ main {
 @media screen and (max-width: 414px) {
 
 	header {
-		padding: 9px 0;
+		padding: 12px 0;
 	}
 	
 	.logo {
