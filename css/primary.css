@@ -208,6 +208,10 @@ footer {
     height: auto;
   }
 
+	.contact-content {
+		justify-content: center;
+	}
+
   .contact-content p {
     padding: 0px;
   }
