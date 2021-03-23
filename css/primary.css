@@ -54,17 +54,18 @@ button {
 	font-family: 'Poppins', sans-serif;	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	background-color: #003D35;
+	background-color: #333;
 	color: #FFFFFF;
 	padding: 8px 16px;
 	border: 1px solid transparent;
 	border-radius: 30px;
+	box-shadow: 0px, 5px, 10px rgba(0 ,0, 0, 0.07);
 }
 
 /* Button Hover */
 button:hover {
   background-color: #FFFFFF;
-  color: #003D35;
+  color: #333;
 }
 
 
@@ -172,7 +173,7 @@ footer {
 @media screen and (max-width: 414px) {
 
 	header {
-		padding: 9px 0;
+		padding: 12px 0;
 	}
 	
 	.logo {
@@ -181,19 +182,16 @@ footer {
 	}
 
 	.logo img {
-		width: 136px;
+		width: 64px;
 		height: auto;
 	}
 
 	button {
 		font-size: 0.875em;
-		background: transparent;
-		color: #333;
 		position: absolute;
-		top: 36px;
+		top: 24px;
 		right: 18px;
-		padding: 0px;
-		border: none;
+		filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 	}
 
 	footer p {
