@@ -120,7 +120,8 @@ main {
 }
 
 .about-content {
-	padding: 0 1.25rem 2rem;
+	padding: 0 1.25rem 4rem;
+	width: inherit;
 }
 
 .about-content h2 {
@@ -130,6 +131,18 @@ main {
 
 .about-content p {
 	font-size: .875rem;
+	padding-bottom: 2rem;
+}
+
+.about-img-div {
+	width: inherit;
+	align-content: center;
+	display: flex;
+}
+
+.about-content img {
+	margin: 0 auto;
+	width: inherit;
 }
 
 
