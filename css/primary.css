@@ -172,7 +172,16 @@ main {
 .contact-content {
   position: relative;
   text-align: center;
+	justify-content: center;
   padding: 20px;
+}
+
+.contact-content button {
+	position: relative;
+	width: 260px;
+	height: 40px;
+	margin-left: 20px;
+	margin-bottom: 64px;
 }
 
 /* FOOTER --------------------------------------------------*/
@@ -208,20 +217,8 @@ footer {
     height: auto;
   }
 
-	.contact-content {
-		justify-content: center;
-	}
-
   .contact-content p {
     padding: 0px;
-  }
-
-  .contact-content button {
-    position: relative;
-    width: 260px;
-    height: 40px;
-    margin-left: 20px;
-    margin-bottom: 64px;
   }
 
   footer p {
