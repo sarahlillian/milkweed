@@ -223,8 +223,8 @@ main {
   flex-flow: row wrap;
   max-width: 1440px;
   width: 100%;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 4.444%;
+  padding-right: 4.444%;
 }
 
 .resources-header {
@@ -305,6 +305,28 @@ footer {
   padding-right: 20px;
 }
 
+/* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1308px) {
+	.resources-wrapper {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+/* 1050px and less responsive design ----------------------------------- */
+@media screen and (max-width: 1050px) {
+	.resources-wrapper {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+/* 850px and less responsive design ----------------------------------- */
+@media screen and (max-width: 850px) {
+	.resources-wrapper {
+		flex-flow: column;
+	}
+}
 
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
