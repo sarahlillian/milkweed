@@ -2,22 +2,22 @@
 
 /* OVERALL --------------------------------------------------*/
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: visible;
 }
 
 /* Content Wrapper */
 .wrapper {
-	width: 100%;
+  width: 100%;
 }
 
 /* STYLE GUIDE --------------------------------------------------*/
@@ -25,35 +25,43 @@ body {
 /* TYPOGRAPHY ----------*/
 /* Yusei Magic */
 h1, h2, h3 {
-	font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 /* H1 */
 h1 {
-	font-family: 'Yusei Magic', sans-serif;
-	font-size: 60px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 60px;
 }
 
 /* Poppins */
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
 p {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 
 /* BUTTON ----------*/
 /* Button Active */
 button {
-	font-size: 14px;
-	font-family: 'Poppins', sans-serif;	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	background-color: #333;
-	color: #FFFFFF;
-	padding: 8px 16px;
-	border: 1px solid transparent;
-	border-radius: 30px;
+    font-size: 0.875em;
+    font-family: 'Poppins', sans-serif; font-weight: 700;
+    letter-spacing: 0.1em;
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
 /* Button Hover */
@@ -65,89 +73,193 @@ button:hover {
 
 /* HEADER --------------------------------------------------*/
 header {
-	display: flex;
-	justify-content: center;
-	padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
 }
 
 nav {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1440px;
-	width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+nav button {
+	right:18px;
 }
 
 .logo {
-	width: auto;
+  width: auto;
 }
 
 .logo img {
-	width: 192px;
-	height: auto;
+  width: 192px;
+  height: auto;
 }
 
 /* CONTENT --------------------------------------------------*/
+
+h1 {
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+p {
+  font-size: 0.875em;
+  padding-right: 1.2858em;
+  padding-left: 1.2858em;
+  padding-bottom: 1.2858em;
+}
+
 main {
-	justify-content: center;
-	min-height: 100vh;
-	flex: 1;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-wrapper {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	max-width: 1440px;
-	width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .hero-content {
-	text-align: center;
 	width: 447px;
+	padding-top: 64px;
+	padding-bottom: 246px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.resources-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.resources-header {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.resources-header h2 {
+  font-size: 2.5rem;
+}
+
+.resources-content {
+  border-radius: 1.25rem;
+  background-color: #EFEFEF;
+  margin: 0 1.25rem 2rem;
+  padding: 1.5rem .875rem 1.5rem;
+}
+
+.resources-content h4 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+.resources-content p {
+  font-size: .875rem;
+  padding-bottom: 1rem;
+}
+
+.contact-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.contact-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.contact-content {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+	width: inherit;
+}
+
+.contact-content a {
+	width: inherit;
+}
+
+.contact-content button {
+	position: relative;
+	width: inherit;
+	height: 40px;
+	margin-bottom: 64px;
+	margin-left:20px;
 }
 
 /* FOOTER --------------------------------------------------*/
 
 footer p {
-	text-align: center;
-	color: #FFF;
+  text-align: center;
+  color: #FFF;
 }
 
 footer {
-	flex-shrink: 0;
-	background-color: #333;
-	padding-top: 18px;
-	padding-bottom: 18px;
-	padding-left: 20px;
-	padding-right: 20px;
+  flex-shrink: 0;
+  background-color: #333;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
 
-    header {
-        padding: 9px 0;
-    }
-    
-    .logo {
-        position: relative;
-        left: 18px;
-    }
+	.hero-wrapper {
+		width: 100%;
+	}
 
-    .logo img {
-        width: 64px;
-        height: auto;
-    }
+	.hero-content h1 {
+		min-width: 280px;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
 
-    button {
-        font-size: 0.875em;
-        position: absolute;
-        top: 24px;
-        right: 18px;
-        filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
-    }
+	.hero-content p {
+		font-size: 14px;
+	}
+
+	header {
+		padding: 12px 0;
+	}
+	
+	.logo {
+		position: relative;
+		left: 18px;
+	}
+
+	.logo img {
+		width: 64px;
+		height: auto;
+	}
+
+	footer p {
+		font-size: 0.875em;
+		line-height: 1.3em;
+	}
 
 /*End @414px media query */
 }
