@@ -148,7 +148,7 @@ main {
   }
 
 .about-wrapper {
-	display: flex;
+  display: flex;
 	flex-flow: row wrap;
 	max-width: 1440px;
 	width: 100%;
@@ -178,6 +178,44 @@ main {
 .about-content img {
 	margin: 0 auto;
 	width: inherit;
+}
+
+.how-it-works-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: 100%;
+	text-align: center;
+}
+
+.how-it-works-header {
+	padding: 0 1.25rem 4rem;
+}
+
+.how-it-works-header h2 {
+	font-size: 2.5rem;
+	padding-bottom: 1.25rem;
+}
+
+.how-it-works-content {
+	padding: 0 1.25rem 4rem;
+	width: 100%;
+}
+
+.how-it-works-content img {
+	padding-right: 5.75rem;
+	padding-left: 5.75rem;
+	width: 100%;
+}
+
+.how-it-works-content h3 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.25rem;
+}
+
+.how-it-works-wrapper p {
+	font-size: .875rem;
 }
 
 .resources-wrapper {
@@ -211,8 +249,8 @@ main {
 }
 
 .resources-content p {
-  font-size: .875rem;
-  padding-bottom: 1rem;
+	font-size: .875rem;
+	padding-bottom: 1rem;
 }
 
 .contact-wrapper {
@@ -247,7 +285,6 @@ main {
 	margin-bottom: 64px;
 	margin-left:20px;
 }
-
 
 /* FOOTER --------------------------------------------------*/
 
