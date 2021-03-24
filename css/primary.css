@@ -178,6 +178,7 @@ main {
 .about-content img {
 	margin: 0 auto;
 	width: inherit;
+	max-width: 280px;
 }
 
 .how-it-works-wrapper {
