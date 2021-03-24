@@ -238,8 +238,9 @@ main {
 .resources-content {
   border-radius: 1.25rem;
   background-color: #EFEFEF;
-  margin: 0 1.25rem 2rem;
+  margin: 0 auto 2rem;
   padding: 1.5rem .875rem 1.5rem;
+  max-width: 280px;
 }
 
 .resources-content h4 {
@@ -300,6 +301,14 @@ footer {
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px){
+	.resources-content {
+		margin-left: .625rem;
+		margin-right: .625rem;
+	}
 }
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
