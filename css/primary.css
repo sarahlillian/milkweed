@@ -176,6 +176,13 @@ main {
 	width: 100%;
 }
 
+.contact-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 100%;
+}
+
 .contact-content {
   position: relative;
   text-align: center;
@@ -183,12 +190,16 @@ main {
 	width: inherit;
 }
 
+.contact-content a {
+	width: inherit;
+}
+
 .contact-content button {
 	position: relative;
-	width: 280px;
+	width: inherit;
 	height: 40px;
-	margin-left: 10px;
 	margin-bottom: 64px;
+	margin-left: 20px;
 }
 
 /* FOOTER --------------------------------------------------*/
@@ -222,10 +233,6 @@ footer {
   .logo img {
     width: 136px;
     height: auto;
-  }
-
-  .contact-content p {
-    padding: 0px;
   }
 
   footer p {
