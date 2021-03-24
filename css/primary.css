@@ -216,27 +216,31 @@ footer {
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
 
-  header {
-    padding: 9px 0;
-  }
-  
-  .logo {
-    position: relative;
-    left: 18px;
-  }
+	header {
+		padding: 12px 0;
+	}
+	
+	.logo {
+		position: relative;
+		left: 18px;
+	}
 
-  .logo img {
-    width: 136px;
-    height: auto;
-  }
+	.logo img {
+		width: 64px;
+		height: auto;
+	}
 
-  .contact-content p {
-    padding: 0px;
-  }
+	button {
+		font-size: 0.875em;
+		position: absolute;
+		top: 24px;
+		right: 18px;
+		filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+	}
 
-  footer p {
-    font-size: 0.875em;
-    line-height: 1.3em;
+	footer p {
+		font-size: 0.875em;
+		line-height: 1.3em;
   }
 
 /*End @414px media query */
