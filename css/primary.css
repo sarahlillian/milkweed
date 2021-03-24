@@ -225,24 +225,24 @@ footer {
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
 
-  header {
-    padding: 9px 0;
-  }
-  
-  .logo {
-    position: relative;
-    left: 18px;
-  }
+	header {
+		padding: 12px 0;
+	}
+	
+	.logo {
+		position: relative;
+		left: 18px;
+	}
 
-  .logo img {
-    width: 136px;
-    height: auto;
-  }
+	.logo img {
+		width: 64px;
+		height: auto;
+	}
 
-  footer p {
-    font-size: 0.875em;
-    line-height: 1.3em;
-  }
+	footer p {
+		font-size: 0.875em;
+		line-height: 1.3em;
+	}
 
 /*End @414px media query */
 }
