@@ -232,7 +232,7 @@ main {
 .resources-header {
   text-align: center;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .resources-header h2 {
@@ -312,6 +312,10 @@ footer {
 	.resources-wrapper {
 		padding-left: 10%;
 		padding-right: 10%;
+	}
+
+	.resources-header {
+		padding-bottom: 4rem;
 	}
 
 	.resources-content {
