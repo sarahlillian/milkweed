@@ -73,7 +73,7 @@ button:hover {
 header {
   display: flex;
   justify-content: center;
-  padding: 11px 0;
+  padding: 16px 0;
 }
 
 nav {
@@ -89,10 +89,12 @@ nav button {
 	width: 96px;
 	height: 40px;
 	position: relative;
+	right: 63px;
 }
 
 .logo {
 	position: relative;
+	left: 64px;
 }
 
 .logo img {
@@ -293,6 +295,9 @@ main {
 footer p {
   text-align: center;
   color: #FFF;
+	font-size: 0.875em;
+	line-height: 1.3em;
+	padding: 18px, 0px;
 }
 
 footer {
@@ -304,19 +309,77 @@ footer {
   padding-right: 20px;
 }
 
-/* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
+/* 1400px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+	
 	}
+	
+	/*End @721px media query */
+
+
+/* 721px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 721px) {
+
+	header {
+		padding: 11px 0px;
+	}
+
+	.logo {
+		left: 63px;
+	}
+
+	nav button {
+		right:65px;
+	}
+
 }
 
+/*End @721px media query */
+
+/* 720px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+	nav button {
+		right:24px;
+	}
+
+	.logo {
+		left: 22px;
+	}
+
+}
+
+/*End @720px media query */
+
+/* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+
+
+}
+
+/*End @497px media query */
+
+/* 496px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 496px) {
+	
+
+
+}
+
+/*End @496px media query */
+
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
 
 	.logo {
 		left: 21px;
+	}
+
+	nav button {
+		right: 21px;
 	}
 
 	.hero-wrapper {
@@ -333,65 +396,15 @@ footer {
 		font-size: 14px;
 	}
 
-	footer p {
-		font-size: 0.875em;
-		line-height: 1.3em;
-	}
 
 /*End @320px media query */
 
-/* 496px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (max-width: 496px) {
-	
-	nav button {
-		right:21px;
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px){
+	.resources-content {
+		margin-left: .625rem;
+		margin-right: .625rem;
 	}
-
 }
-
-/*End @496px media query */
-
-/* 497px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (min-width: 497px) {
-
-	nav button {
-		right:20px;
-	}
-
-	.logo {
-		left: 22px;
-	}
-
-}
-
-/*End @497px media query */
-
-/* 720px RESPONSIVE DESIGN --------------------------------------------- */
-
-@media screen and (min-width: 720px) {
-
-	nav button {
-		right:23px;
-	}
-
-}
-
-/*End @720px media query */
-
-/* 721px RESPONSIVE DESIGN --------------------------------------------- */
-
-@media screen and (min-width: 721px) {
-
-	.logo {
-		left: 63px;
-	}
-
-	nav button {
-		right:65px;
-	}
-
-}
-
-/*End @721px media query */
 
 }
