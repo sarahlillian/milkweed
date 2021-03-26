@@ -194,8 +194,12 @@ main {
 }
 
 .how-it-works-header h2 {
-	font-size: 2.5rem;
+	font-size: 3.1875rem;
 	padding-bottom: 1.25rem;
+}
+
+.how-it-works-header p {
+	font-size: 1.125rem;
 }
 
 .how-it-works-content {
@@ -210,11 +214,11 @@ main {
 .how-it-works-content h3 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
-.how-it-works-wrapper p {
-	font-size: .875rem;
+.how-it-works-content p {
+	font-size: 1rem;
 }
 
 .resources-wrapper {
@@ -302,11 +306,19 @@ footer {
   padding-right: 20px;
 }
 
-/* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
+/* 496px and smaller responsive design -------------------------------- */
+@media screen and (max-width: 496px) {
+
+	.how-it-works-header h2 {
+		font-size: 2.5rem;
+	}
+	
+	.how-it-works-wrapper p {
+		font-size: .875rem;
+	}
+
+	.how-it-works-content h3 {
+		font-size: 1.25rem;
 	}
 }
 
@@ -347,4 +359,12 @@ footer {
 	}
 
 /*End @414px media query */
+}
+
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px){
+	.resources-content {
+		margin-left: .625rem;
+		margin-right: .625rem;
+	}
 }
