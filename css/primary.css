@@ -187,10 +187,12 @@ main {
 	max-width: 1440px;
 	width: 100%;
 	text-align: center;
+	justify-content: center;
 }
 
 .how-it-works-header {
 	padding: 0 1.25rem 4rem;
+	max-width: 456px;
 }
 
 .how-it-works-header h2 {
@@ -205,6 +207,7 @@ main {
 .how-it-works-content {
 	padding: 0 1.25rem 4rem;
 	width: 100%;
+	max-width: 456px;
 }
 
 .how-it-works-content img {
