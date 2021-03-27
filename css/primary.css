@@ -151,14 +151,13 @@ main {
   	display: flex;
 	flex-flow: column;
 	max-width: 1440px;
-	width: 100%;
 	align-self: center;
 }
 
 .about-content {
 	display: flex;
 	padding: 0 1.25rem 4rem;
-	width: inherit;
+	overflow-x: hidden;
 }
 
 .about-img-left {
@@ -167,6 +166,10 @@ main {
 
 .about-img-right {
 	flex-direction: row;
+}
+
+.about-text {
+	width: clamp(385px, 242px + 19.9vw, 528px);
 }
 
 .about-content h2 {
@@ -187,8 +190,8 @@ main {
 
 .about-content img {
 	margin: 0 auto;
-	width: inherit;
-	max-width: 280px;
+	width: 528px;
+	height: 606px;
 }
 
 .how-it-works-wrapper {
@@ -314,12 +317,31 @@ footer {
 
 /* 720px and less RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (max-width: 720px){
+	.about-wrapper {
+		width: 100%;
+	}
+	
 	.about-img-left {
 		flex-direction: column;
 	}
 
 	.about-img-right {
 		flex-direction: column;
+	}
+
+	.about-content {
+		width: inherit;
+	}
+
+	.about-text {
+		width: inherit;
+	}
+
+	.about-content img {
+		margin: 0 auto;
+		width: inherit;
+		max-width: 280px;
+		max-height: 320px;
 	}
 }
 
