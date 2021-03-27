@@ -38,15 +38,15 @@ h1 {
 /* Poppins */
 h4 {
   font-family: 'Poppins', sans-serif;
+	font-size: 4.188em;
   font-weight: 700;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+	font-size: 1.5em;
 }
-
 
 /* BUTTON ----------*/
 /* Button Active */
@@ -103,11 +103,6 @@ nav button {
 
 /* CONTENT --------------------------------------------------*/
 
-h1 {
-  font-size: 2.5em;
-  padding: 20px;
-}
-
 main {
   justify-content: center;
   min-height: 100vh;
@@ -127,25 +122,17 @@ main {
 .hero-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   max-width: 1440px;
   width: 100%;
 }
 
 .hero-content {
-	width: 447px;
-	padding-top: 64px;
-	padding-bottom: 246px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 528px;
+	padding-top: 120px;
+	margin-bottom: 432px;
+	padding-left: 64px;
 }
 
-.hero-content p {
-	font-size: 0.875em;
-	padding-right: 1.2858em;
-	padding-left: 1.2858em;
-	padding-bottom: 1.2858em;
-  }
 
 .about-wrapper {
   display: flex;
@@ -304,49 +291,117 @@ footer {
   padding-right: 20px;
 }
 
-/* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
-	}
-}
 
-/* 414px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (max-width: 414px) {
+/* 721px RESPONSIVE DESIGN --------------------------------------------- */
 
-	.hero-wrapper {
-		width: 100%;
-	}
+@media screen and (max-width: 721px) {
 
-	.hero-content h1 {
-		min-width: 280px;
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
-
-	.hero-content p {
-		font-size: 14px;
-	}
-
-	header {
-		padding: 12px 0;
+	h1 {
+		font-size: 3.18em;
 	}
 	
+	p {
+		font-size: 1.125em;
+	}
+
+		header {
+			padding: 11px 0px;
+		}
+
+		.logo {
+			left: 63px;
+		}
+
+		nav button {
+			right:65px;
+		}
+
+		.hero-content {
+			width: 457px;
+			padding-top: 64px;
+			margin-bottom: 266px;
+		}
+
+}
+
+/*End @721px media query */
+
+/* 720px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+	nav button {
+		right:24px;
+	}
+
 	.logo {
-		position: relative;
-		left: 18px;
+		left: 22px;
 	}
 
-	.logo img {
-		width: 64px;
-		height: auto;
+	.hero-content {
+		margin-bottom: 313px;
+		padding-left: 20px;
 	}
 
-	footer p {
+}
+
+/*End @720px media query */
+
+/* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+
+	.hero-content {
+		margin-bottom: 230px;
+	}
+
+}
+
+/*End @497px media query */
+
+/* 496px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 496px) {
+
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	p {
 		font-size: 0.875em;
-		line-height: 1.3em;
 	}
 
-/*End @414px media query */
+	.hero-content {
+		width: 280px;
+		margin-bottom: 246px;
+	}
+
+}
+
+/*End @496px media query */
+
+/* 320px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 320px) {
+
+.logo {
+	left: 21px;
+}
+
+nav button {
+	right: 21px;
+}
+
+.hero-wrapper {
+	width: 100%;
+}
+
+}
+
+
+/*End @320px media query */
+
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px){
+.resources-content {
+	margin-left: .625rem;
+	margin-right: .625rem;
+}
 }
