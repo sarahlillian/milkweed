@@ -180,10 +180,11 @@ main {
 
 .about-text-left {
 	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
+	margin-left: clamp(0px, -112.5px + 15.6vw, 112px);
 }
 
 .about-text-right {
-	margin-left: 35px;
+	margin-left: clamp(35px, -196.4px + 32.1vw, 266px);
 }
 
 .about-content h2 {
@@ -343,6 +344,7 @@ footer {
 	.about-wrapper {
 		align-self: center;
 	}
+}
 
 /* 720px and less RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (max-width: 720px){
@@ -360,11 +362,14 @@ footer {
 
 	.about-content {
 		width: inherit;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 	}
 
 	.about-text {
 		width: inherit;
 		padding: 0;
+		margin: 0;
 	}
 
 	.about-img-div {
