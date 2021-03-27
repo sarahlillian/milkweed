@@ -152,6 +152,7 @@ main {
 	flex-flow: column;
 	max-width: 1440px;
 	width: 100%;
+	align-self: center;
 }
 
 .about-content {
