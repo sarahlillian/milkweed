@@ -151,7 +151,8 @@ main {
   	display: flex;
 	flex-flow: column;
 	max-width: 1440px;
-	align-self: center;
+	align-self: auto;
+	overflow-x: hidden;
 }
 
 .about-content {
@@ -160,16 +161,29 @@ main {
 	overflow-x: hidden;
 }
 
-.about-img-left {
-	flex-direction: row-reverse;
+.about-text-then-img {
+	flex-direction: row;
+	align-self: left;
+	padding-left: 4rem;
 }
 
-.about-img-right {
-	flex-direction: row;
+.about-img-then-text {
+	flex-direction: row-reverse;
+	padding-right: 4rem;
 }
 
 .about-text {
 	width: clamp(385px, 242px + 19.9vw, 528px);
+	align-self: center;
+	flex-shrink: 0;
+}
+
+.about-text-left {
+	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
+}
+
+.about-text-right {
+	margin-left: 35px;
 }
 
 .about-content h2 {
@@ -183,9 +197,18 @@ main {
 }
 
 .about-img-div {
-	width: inherit;
 	align-content: center;
 	display: flex;
+}
+
+.about-img-then-text img {
+	float: right;
+	overflow-x: hidden;
+}
+
+.about-text-then-img img {
+	float: left;
+	overflow-x: hidden;
 }
 
 .about-content img {
@@ -315,17 +338,23 @@ footer {
   padding-right: 20px;
 }
 
+/* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (min-width: 1440px){
+	.about-wrapper {
+		align-self: center;
+	}
+
 /* 720px and less RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (max-width: 720px){
 	.about-wrapper {
 		width: 100%;
 	}
 	
-	.about-img-left {
+	.about-text-then-img {
 		flex-direction: column;
 	}
 
-	.about-img-right {
+	.about-img-then-text {
 		flex-direction: column;
 	}
 
@@ -335,6 +364,12 @@ footer {
 
 	.about-text {
 		width: inherit;
+		padding: 0;
+	}
+
+	.about-img-div {
+		width: inherit;
+		padding: 0;
 	}
 
 	.about-content img {
