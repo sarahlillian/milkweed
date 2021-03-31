@@ -31,7 +31,7 @@ h1, h2, h3 {
 /* H1 */
 h1 {
   font-family: 'Yusei Magic', sans-serif;
-  font-size: 60px;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
 
@@ -45,7 +45,7 @@ h4 {
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-	font-size: 1.5em;
+	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
 }
 
 /* BUTTON ----------*/
@@ -124,6 +124,7 @@ main {
   flex-flow: row nowrap;
   max-width: 1440px;
   width: 100%;
+	align-self: center;
 }
 
 .hero-content {
@@ -131,6 +132,10 @@ main {
 	padding-top: 120px;
 	margin-bottom: 432px;
 	padding-left: 64px;
+}
+
+.hero-content h1 {
+	padding-bottom: 20px;
 }
 
 
