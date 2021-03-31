@@ -122,6 +122,7 @@ main {
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .hero-wrapper {
@@ -222,16 +223,20 @@ main {
   flex-flow: row wrap;
   max-width: 1440px;
   width: 100%;
+  justify-content: center;
+  padding-left: 4.444%;
+  padding-right: 4.444%;
+  margin: 0 auto;
 }
 
 .resources-header {
   text-align: center;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .resources-header h2 {
-  font-size: 2.5rem;
+  font-size: 4.1875rem;
 }
 
 .resources-content {
@@ -243,13 +248,13 @@ main {
 }
 
 .resources-content h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding-top: 1rem;
   padding-bottom: .5rem;
 }
 
 .resources-content p {
-	font-size: .875rem;
+	font-size: 1rem;
 	padding-bottom: 1rem;
 }
 
@@ -302,13 +307,69 @@ footer {
   padding-right: 20px;
 }
 
-/* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
+/* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1308px) {
+	.resources-wrapper {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.resources-header {
+		padding-bottom: 4rem;
+	}
+
 	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 }
+
+/* 945px and less responsive design */
+@media screen and (max-width: 945px) {
+	.resources-header h2 {
+		font-size: 7.08vw;
+	}
+}
+
+/* 862px and less responsive design ----------------------------------- */
+@media screen and (max-width: 850px) {
+	.resources-wrapper {
+		flex-flow: column;
+	}
+
+	.resources-content {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* 720px and less responsive design ----------------------------------- */
+@media screen and (max-width: 720px) {
+	.resources-header h2 {
+		font-size: 3.1875rem;
+	}
+}
+
+/* 496px and less responsive design --------------------------------- */
+@media screen and (max-width: 496px) {
+	.resources-wrapper {
+		padding-right: 1.25px;
+		padding-left: 1.25px;
+	}
+
+	.resources-header h2 {
+		font-size: 2.5rem;
+	}
+
+	.resources-content h4 {
+		font-size: 1rem;
+	}
+
+	.resources-content p {
+		font-size: .875rem;
+	}
+}
+
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 414px) {
@@ -347,4 +408,12 @@ footer {
 	}
 
 /*End @414px media query */
+}
+
+/* less than 300px RESPONSIVE DESIGN ------------------------------*/
+@media screen and (max-width: 300px){
+	.resources-content {
+		margin-left: .625rem;
+		margin-right: .625rem;
+	}
 }
