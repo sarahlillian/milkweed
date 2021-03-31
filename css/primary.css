@@ -153,23 +153,27 @@ main {
 	max-width: 1440px;
 	align-self: auto;
 	overflow-x: hidden;
+	padding-top: clamp(96px, 32px + 8.88vw, 170px);
+	padding-bottom: 2rem;
 }
 
 .about-content {
 	display: flex;
-	padding: 0 1.25rem 4rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: clamp(64px, 8.88vw, 128px);
 	overflow-x: hidden;
 }
 
 .about-text-then-img {
 	flex-direction: row;
 	align-self: left;
-	padding-left: 4rem;
+	padding-left: 2.75rem;
 }
 
 .about-img-then-text {
 	flex-direction: row-reverse;
-	padding-right: 4rem;
+	padding-right: 2.75rem;
 }
 
 .about-text {
