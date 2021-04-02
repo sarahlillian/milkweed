@@ -149,37 +149,78 @@ main {
   }
 
 .about-wrapper {
-  display: flex;
-	flex-flow: row wrap;
+  	display: flex;
+	flex-flow: column;
 	max-width: 1440px;
-	width: 100%;
+	align-self: auto;
+	overflow-x: hidden;
+	padding-top: clamp(96px, 32px + 8.88vw, 170px);
+	padding-bottom: 2rem;
 }
 
 .about-content {
-	padding: 0 1.25rem 4rem;
-	width: inherit;
+	display: flex;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: clamp(64px, 8.88vw, 128px);
+	overflow-x: hidden;
+}
+
+.about-text-then-img {
+	flex-direction: row;
+	align-self: left;
+	padding-left: 2.75rem;
+}
+
+.about-img-then-text {
+	flex-direction: row-reverse;
+	padding-right: 2.75rem;
+}
+
+.about-text {
+	width: clamp(385px, 242px + 19.9vw, 528px);
+	align-self: center;
+	flex-shrink: 0;
+}
+
+.about-text-left {
+	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
+	margin-left: clamp(0px, -112.5px + 15.6vw, 112px);
+}
+
+.about-text-right {
+	margin-left: clamp(35px, -196.4px + 32.1vw, 266px);
 }
 
 .about-content h2 {
-	font-size: 1.875rem;
-	padding-bottom: 1.125rem;
+	font-size: clamp(2.5rem, 29px + 1.53vw, 3.1875rem);
+	padding-bottom: 1.25rem;
 }
 
 .about-content p {
-	font-size: .875rem;
+	font-size: 1.125rem;
 	padding-bottom: 2rem;
 }
 
 .about-img-div {
-	width: inherit;
 	align-content: center;
 	display: flex;
 }
 
+.about-img-then-text img {
+	float: right;
+	overflow-x: hidden;
+}
+
+.about-text-then-img img {
+	float: left;
+	overflow-x: hidden;
+}
+
 .about-content img {
 	margin: 0 auto;
-	width: inherit;
-	max-width: 280px;
+	width: 528px;
+	height: 606px;
 }
 
 .how-it-works-wrapper {
@@ -328,6 +369,14 @@ footer {
   padding-right: 20px;
 }
 
+    
+/* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (min-width: 1440px){
+	.about-wrapper {
+		align-self: center;
+	}
+}
+    
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
 @media screen and (max-width: 1308px) {
 	.resources-wrapper {
@@ -367,6 +416,41 @@ footer {
 
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
+  .about-wrapper {
+		width: 100%;
+	}
+	
+	.about-text-then-img {
+		flex-direction: column;
+	}
+
+	.about-img-then-text {
+		flex-direction: column;
+	}
+
+	.about-content {
+		width: inherit;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.about-text {
+		width: inherit;
+		padding: 0;
+		margin: 0;
+	}
+
+	.about-img-div {
+		width: inherit;
+		padding: 0;
+	}
+
+	.about-content img {
+		margin: 0 auto;
+		width: inherit;
+		max-width: 280px;
+		max-height: 320px;
+	}
   .how-it-works-content {
 		max-width: 456px;
 		padding-left: 1.25rem;
@@ -380,6 +464,12 @@ footer {
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
+  .about-content h2 {
+		font-size: 1.875rem;
+	}
+
+	.about-content p {
+		font-size: .875rem;
   
   .how-it-works-header h2 {
 		font-size: 2.5rem;
@@ -451,6 +541,7 @@ footer {
 }
 
 /* less than 300px RESPONSIVE DESIGN ------------------------------*/
+    
 @media screen and (max-width: 300px){
 	.resources-content {
 		margin-left: .625rem;
