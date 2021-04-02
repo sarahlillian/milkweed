@@ -184,24 +184,45 @@ main {
 
 .how-it-works-wrapper {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
 	max-width: 1440px;
 	width: 100%;
 	text-align: center;
+	justify-content: center;
+	align-self: center;
 }
 
 .how-it-works-header {
 	padding: 0 1.25rem 4rem;
+	width: 100%;
+	max-width: clamp(456px, 314px + 25.28vw, 638px);
+	align-self: center;
 }
 
 .how-it-works-header h2 {
-	font-size: 2.5rem;
+	font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 	padding-bottom: 1.25rem;
 }
 
+.how-it-works-header p {
+	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
+}
+
+.how-it-works-content-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: inherit;
+	justify-content: center;
+	margin: 0 auto;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
 .how-it-works-content {
-	padding: 0 1.25rem 4rem;
+	padding: 0 1rem 4rem;
 	width: 100%;
+	max-width: 416px;
 }
 
 .how-it-works-content img {
@@ -211,11 +232,11 @@ main {
 .how-it-works-content h3 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
-.how-it-works-wrapper p {
-	font-size: .875rem;
+.how-it-works-content p {
+	font-size: 1rem;
 }
 
 .resources-wrapper {
@@ -340,18 +361,37 @@ footer {
 	.resources-content {
 		margin-left: auto;
 		margin-right: auto;
+
 	}
 }
 
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
-	.resources-header h2 {
+  .how-it-works-content {
+		max-width: 456px;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+  
+  .resources-header h2 {
 		font-size: 3.1875rem;
 	}
 }
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
+  
+  .how-it-works-header h2 {
+		font-size: 2.5rem;
+	}
+	
+	.how-it-works-wrapper p {
+		font-size: .875rem;
+	}
+
+	.how-it-works-content h3 {
+		font-size: 1.25rem;
+    
 	.resources-wrapper {
 		padding-right: 1.25px;
 		padding-left: 1.25px;
