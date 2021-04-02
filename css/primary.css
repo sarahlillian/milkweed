@@ -31,22 +31,22 @@ h1, h2, h3 {
 /* H1 */
 h1 {
   font-family: 'Yusei Magic', sans-serif;
-  font-size: 60px;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
 
 /* Poppins */
 h4 {
   font-family: 'Poppins', sans-serif;
+	font-size: 4.188em;
   font-weight: 700;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
 }
-
 
 /* BUTTON ----------*/
 /* Button Active */
@@ -105,11 +105,6 @@ nav button {
 
 /* CONTENT --------------------------------------------------*/
 
-h1 {
-  font-size: 2.5em;
-  padding: 20px;
-}
-
 main {
   justify-content: center;
   min-height: 100vh;
@@ -130,25 +125,22 @@ main {
 .hero-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   max-width: 1440px;
   width: 100%;
+	align-self: center;
 }
 
 .hero-content {
-	width: 447px;
-	padding-top: 64px;
-	padding-bottom: 246px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 528px;
+	padding-top: 120px;
+	margin-bottom: 432px;
+	padding-left: 64px;
 }
 
-.hero-content p {
-	font-size: 0.875em;
-	padding-right: 1.2858em;
-	padding-left: 1.2858em;
-	padding-bottom: 1.2858em;
-  }
+.hero-content h1 {
+	padding-bottom: 20px;
+}
+
 
 .about-wrapper {
   	display: flex;
@@ -424,6 +416,14 @@ footer {
 
 @media screen and (max-width: 721px) {
 
+
+	h1 {
+		font-size: 3.18em;
+	}
+	
+	p {
+		font-size: 1.125em;
+=======
 	header {
 		padding: 11px 0px;
 	}
@@ -496,6 +496,17 @@ footer {
 		font-size: 3.1875rem;
 	}
 }
+  
+  /* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+
+	.hero-content {
+		margin-bottom: 230px;
+	}
+
+}
+
+/*End @497px media query */
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
@@ -533,33 +544,64 @@ footer {
 	.resources-content p {
 		font-size: .875rem;
 	}
+
+		header {
+			padding: 11px 0px;
+		}
+
+		.logo {
+			left: 63px;
+		}
+
+		nav button {
+			right:65px;
+		}
+
+		h1 {
+		font-size: 2.5em;
+    }
+
+    p {
+      font-size: 0.875em;
+    }
+
+    .hero-content {
+      width: 280px;
+      margin-bottom: 246px;
+    }
+
+
 }
 
 
-/* 414px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (max-width: 414px) {
+/* 320px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 320px) {
 
-	.hero-wrapper {
-		width: 100%;
-	}
+.logo {
+	left: 21px;
+}
 
-	.hero-content h1 {
-		min-width: 280px;
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
+nav button {
+	right: 21px;
+}
 
-	.hero-content p {
-		font-size: 14px;
-	}
+.hero-wrapper {
+	width: 100%;
+}
+
+}
 
 
 /*End @320px media query */
 
 /* less than 300px RESPONSIVE DESIGN */
 @media screen and (max-width: 300px){
+  .resources-content {
+    margin-left: .625rem;
+    margin-right: .625rem;
+  }
   
-  	.logo {
+  .logo {
 		left: 21px;
 	}
 
@@ -573,7 +615,6 @@ footer {
 	}
 }
 
-}
 
 /* less than 300px RESPONSIVE DESIGN ------------------------------*/
     
