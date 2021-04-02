@@ -301,7 +301,7 @@ footer {
 }
 
 /* 1400px --------------------------------------------- */
-@media screen and (min-width: 1399px){
+@media screen and (min-width: 1440px){
 
 	.contact-content {
 		padding-top: 102px;
@@ -336,6 +336,15 @@ footer {
 
 }
 
+/* less than 310px RESPONSIVE DESIGN */
+@media screen and (max-width: 310px){
+	.contact-content button {
+		right: 0px;
+		width: 240px;
+	}
+
+}
+
 
 /* less than 300px RESPONSIVE DESIGN */
 @media screen and (max-width: 300px){
@@ -343,6 +352,7 @@ footer {
 		margin-left: .625rem;
 		margin-right: .625rem;
 	}
+
 }
 
 /* 414px RESPONSIVE DESIGN --------------------------------------------- */
