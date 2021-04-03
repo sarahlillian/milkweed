@@ -35,10 +35,10 @@ h1 {
 	margin-bottom: 20px;
 }
 
-
 /* Poppins */
 h4 {
   font-family: 'Poppins', sans-serif;
+	font-size: 4.188em;
   font-weight: 700;
 }
 
@@ -47,7 +47,6 @@ p {
   font-weight: 400;
 	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
 }
-
 
 /* BUTTON ----------*/
 /* Button Active */
@@ -76,7 +75,7 @@ button:hover {
 header {
   display: flex;
   justify-content: center;
-  padding: 8px 0;
+  padding: 16px 0;
 }
 
 nav {
@@ -89,17 +88,22 @@ nav {
 }
 
 nav button {
-	right:18px;
+	width: 96px;
+	height: 40px;
+	position: relative;
+	right: 63px;
 }
 
 .logo {
-  width: auto;
+	position: relative;
+	left: 64px;
 }
 
 .logo img {
-  width: 192px;
-  height: auto;
+	width: 147px;
+	height: 66px;
 }
+
 
 /* CONTENT --------------------------------------------------*/
 
@@ -117,101 +121,159 @@ main {
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .hero-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   max-width: 1440px;
   width: 100%;
+	align-self: center;
 }
 
 .hero-content {
-	width: 447px;
-	padding-top: 64px;
-	padding-bottom: 246px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 528px;
+	padding-top: 120px;
+	margin-bottom: 432px;
+	padding-left: 64px;
 }
 
-.hero-content p {
-	font-size: 0.875em;
-	padding-right: 1.2858em;
-	padding-left: 1.2858em;
-	padding-bottom: 1.2858em;
-  }
+.hero-content h1 {
+	padding-bottom: 20px;
+}
+
 
 .about-wrapper {
-  display: flex;
-	flex-flow: row wrap;
+  	display: flex;
+	flex-flow: column;
 	max-width: 1440px;
-	width: 100%;
+	align-self: auto;
+	overflow-x: hidden;
+	padding-top: clamp(96px, 32px + 8.88vw, 170px);
+	padding-bottom: 2rem;
 }
 
 .about-content {
-	padding: 0 1.25rem 4rem;
-	width: inherit;
+	display: flex;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: clamp(64px, 8.88vw, 128px);
+	overflow-x: hidden;
+}
+
+.about-text-then-img {
+	flex-direction: row;
+	align-self: left;
+	padding-left: 2.75rem;
+}
+
+.about-img-then-text {
+	flex-direction: row-reverse;
+	padding-right: 2.75rem;
+}
+
+.about-text {
+	width: clamp(385px, 242px + 19.9vw, 528px);
+	align-self: center;
+	flex-shrink: 0;
+}
+
+.about-text-left {
+	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
+	margin-left: clamp(0px, -112.5px + 15.6vw, 112px);
+}
+
+.about-text-right {
+	margin-left: clamp(35px, -196.4px + 32.1vw, 266px);
 }
 
 .about-content h2 {
-	font-size: 1.875rem;
-	padding-bottom: 1.125rem;
+	font-size: clamp(2.5rem, 29px + 1.53vw, 3.1875rem);
+	padding-bottom: 1.25rem;
 }
 
 .about-content p {
-	font-size: .875rem;
+	font-size: 1.125rem;
 	padding-bottom: 2rem;
 }
 
 .about-img-div {
-	width: inherit;
 	align-content: center;
 	display: flex;
 }
 
+.about-img-then-text img {
+	float: right;
+	overflow-x: hidden;
+}
+
+.about-text-then-img img {
+	float: left;
+	overflow-x: hidden;
+}
+
 .about-content img {
 	margin: 0 auto;
-	width: inherit;
-	max-width: 280px;
+	width: 528px;
+	height: 606px;
 }
 
 .how-it-works-wrapper {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
 	max-width: 1440px;
 	width: 100%;
 	text-align: center;
+	justify-content: center;
+	align-self: center;
 }
 
 .how-it-works-header {
 	padding: 0 1.25rem 4rem;
+	width: 100%;
+	max-width: clamp(456px, 314px + 25.28vw, 638px);
+	align-self: center;
 }
 
 .how-it-works-header h2 {
-	font-size: 2.5rem;
+	font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 	padding-bottom: 1.25rem;
 }
 
+.how-it-works-header p {
+	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
+}
+
+.how-it-works-content-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1440px;
+	width: inherit;
+	justify-content: center;
+	margin: 0 auto;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
 .how-it-works-content {
-	padding: 0 1.25rem 4rem;
+	padding: 0 1rem 4rem;
 	width: 100%;
+	max-width: 416px;
 }
 
 .how-it-works-content img {
-	padding-right: 5.75rem;
-	padding-left: 5.75rem;
-	width: 100%;
+	width: 136px;
 }
 
 .how-it-works-content h3 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
-.how-it-works-wrapper p {
-	font-size: .875rem;
+.how-it-works-content p {
+	font-size: 1rem;
 }
 
 .resources-wrapper {
@@ -219,16 +281,20 @@ main {
   flex-flow: row wrap;
   max-width: 1440px;
   width: 100%;
+  justify-content: center;
+  padding-left: 4.444%;
+  padding-right: 4.444%;
+  margin: 0 auto;
 }
 
 .resources-header {
   text-align: center;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .resources-header h2 {
-  font-size: 2.5rem;
+  font-size: 4.1875rem;
 }
 
 .resources-content {
@@ -240,13 +306,13 @@ main {
 }
 
 .resources-content h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding-top: 1rem;
   padding-bottom: .5rem;
 }
 
 .resources-content p {
-	font-size: .875rem;
+	font-size: 1rem;
 	padding-bottom: 1rem;
 }
 
@@ -289,6 +355,9 @@ main {
 footer p {
   text-align: center;
   color: #FFF;
+	font-size: 0.875em;
+	line-height: 1.3em;
+	padding: 18px, 0px;
 }
 
 footer {
@@ -300,63 +369,241 @@ footer {
   padding-right: 20px;
 }
 
-/* 1400px --------------------------------------------- */
+    
+/* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px){
-
-	.contact-content {
+	.about-wrapper {
+		align-self: center;
+	}
+  
+  .contact-content {
 		padding-top: 102px;
 		padding-bottom: 102px;
 	}
+}
+    
+/* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1308px) {
+	.resources-wrapper {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.resources-header {
+		padding-bottom: 4rem;
+	}
+
+	.resources-content {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
 
 }
 
-/* 496px --------------------------------------------- */
-@media screen and (max-width: 496px){
-
-	.contact-content h1{
-		font-size: 2.5em;
+/* 945px and less responsive design */
+@media screen and (max-width: 945px) {
+	.resources-header h2 {
+		font-size: 7.08vw;
 	}
+}
+
+/* 862px and less responsive design ----------------------------------- */
+@media screen and (max-width: 850px) {
+	.resources-wrapper {
+		flex-flow: column;
+	}
+
+	.resources-content {
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}
+
+/* 721px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 721px) {
+
+
+	h1 {
+		font-size: 3.18em;
+	}
+	
+	p {
+		font-size: 1.125em;
+	}
+
+	header {
+		padding: 11px 0px;
+	}
+
+	.logo {
+		left: 63px;
+	}
+
+	nav button {
+		right:65px;
+	}
+
+}
+
+/*End @721px media query */
+  
+/* 720px and less responsive design ----------------------------------- */
+@media screen and (max-width: 720px) {
+  
+  	nav button {
+		right:24px;
+	}
+
+	.logo {
+		left: 22px;
+  }
+  
+  .about-wrapper {
+		width: 100%;
+	}
+	
+	.about-text-then-img {
+		flex-direction: column;
+	}
+
+	.about-img-then-text {
+		flex-direction: column;
+	}
+
+	.about-content {
+		width: inherit;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.about-text {
+		width: inherit;
+		padding: 0;
+		margin: 0;
+	}
+
+	.about-img-div {
+		width: inherit;
+		padding: 0;
+	}
+
+	.about-content img {
+		margin: 0 auto;
+		width: inherit;
+		max-width: 280px;
+		max-height: 320px;
+	}
+  .how-it-works-content {
+		max-width: 456px;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+  
+  .resources-header h2 {
+		font-size: 3.1875rem;
+	}
+}
+  
+  /* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+
+	.hero-content {
+		margin-bottom: 230px;
+	}
+
+}
+
+/*End @497px media query */
+
+/* 496px and less responsive design --------------------------------- */
+@media screen and (max-width: 496px) {
+  
+  		header {
+			padding: 11px 0px;
+		}
+
+		.logo {
+			left: 63px;
+		}
+
+		nav button {
+			right:65px;
+		}
+
+		h1 {
+		font-size: 2.5em;
+    }
+
+    p {
+      font-size: 0.875em;
+    }
+
+    .hero-content {
+      width: 280px;
+      margin-bottom: 246px;
+    }
+  
+  .about-content h2 {
+		font-size: 1.875rem;
+	}
+
+	.about-content p {
+		font-size: .875rem;
+	}
+  
+  .how-it-works-header h2 {
+		font-size: 2.5rem;
+	}
+	
+	.how-it-works-wrapper p {
+		font-size: .875rem;
+	}
+
+	.how-it-works-content h3 {
+		font-size: 1.25rem;
+	}
+    
+	.resources-wrapper {
+		padding-right: 1.25px;
+		padding-left: 1.25px;
+	}
+
+	.resources-header h2 {
+		font-size: 2.5rem;
+	}
+
+	.resources-content h4 {
+		font-size: 1rem;
+	}
+
+	.resources-content p {
+		font-size: .875rem;
+	}
+  
+  	.contact-content h1{
+      font-size: 2.5em;
+    }
 
 	.contact-content p {
-		font-size: 0.875em;
-	}
+      font-size: 0.875em;
+    }
 
-}
-
-/* 320px --------------------------------------------- */
-@media screen and (max-width: 320px){
-
-	.contact-content {
-		width: 280px;
-	}
-
-	.contact-content button {
-		right: 15px;
-	}
-
-}
-
-/* less than 310px RESPONSIVE DESIGN */
-@media screen and (max-width: 310px){
-	.contact-content button {
-		right: 0px;
-		width: 240px;
-	}
 
 }
 
 
-/* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
+/* 320px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 320px) {
+
+	.logo {
+		left: 21px;
 	}
 
-}
-
-/* 414px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (max-width: 414px) {
+	nav button {
+		right: 21px;
+	}
 
 	.hero-wrapper {
 		width: 100%;
@@ -371,35 +618,48 @@ footer {
 	.hero-content p {
 		font-size: 14px;
 	}
-
-	header {
-		padding: 12px 0;
-	}
-	
-	.logo {
-		position: relative;
-		left: 18px;
+  
+  	.contact-content {
+		width: 280px;
 	}
 
-	.logo img {
-		width: 64px;
-		height: auto;
-	}
-
-	.hero-content h1 {
-		min-width: 280px;
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
-
-	.hero-content p {
-		font-size: 14px;
+	.contact-content button {
+		right: 15px;
 	}
 
 	footer p {
 		font-size: 0.875em;
 		line-height: 1.3em;
+  }
+
+/*End @320px media query */
+  
+/* less than 310px RESPONSIVE DESIGN */
+@media screen and (max-width: 310px){
+	.contact-content button {
+		right: 0px;
+		width: 240px;
 	}
 
-/*End @414px media query */
+}
+
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px){
+  .resources-content {
+    margin-left: .625rem;
+    margin-right: .625rem;
+  }
+  
+  .logo {
+		left: 21px;
+	}
+
+	nav button {
+		right: 21px;
+	}
+  
+	.resources-content {
+		margin-left: .625rem;
+		margin-right: .625rem;
+	}
 }
