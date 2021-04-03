@@ -32,8 +32,8 @@ h1, h2, h3 {
 h1 {
   font-family: 'Yusei Magic', sans-serif;
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+	margin-bottom: 20px;
 }
-
 
 /* Poppins */
 h4 {
@@ -59,6 +59,8 @@ button {
     padding: 8px 16px;
     border: 1px solid transparent;
     border-radius: 40px;
+    position: absolute;
+    top: 24px;
     filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
@@ -331,8 +333,11 @@ main {
 .contact-content {
   position: relative;
   text-align: center;
+	align-self: center;
   padding: 20px;
-	width: inherit;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	width: 456px;
 }
 
 .contact-content a {
@@ -341,10 +346,8 @@ main {
 
 .contact-content button {
 	position: relative;
-	width: inherit;
+	width: 280px;
 	height: 40px;
-	margin-bottom: 64px;
-	margin-left:20px;
 }
 
 /* FOOTER --------------------------------------------------*/
@@ -371,6 +374,11 @@ footer {
 @media screen and (min-width: 1440px){
 	.about-wrapper {
 		align-self: center;
+	}
+  
+  .contact-content {
+		padding-top: 102px;
+		padding-bottom: 102px;
 	}
 }
     
@@ -511,6 +519,32 @@ footer {
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
+  
+  		header {
+			padding: 11px 0px;
+		}
+
+		.logo {
+			left: 63px;
+		}
+
+		nav button {
+			right:65px;
+		}
+
+		h1 {
+		font-size: 2.5em;
+    }
+
+    p {
+      font-size: 0.875em;
+    }
+
+    .hero-content {
+      width: 280px;
+      margin-bottom: 246px;
+    }
+  
   .about-content h2 {
 		font-size: 1.875rem;
 	}
@@ -547,30 +581,13 @@ footer {
 	.resources-content p {
 		font-size: .875rem;
 	}
-
-		header {
-			padding: 11px 0px;
-		}
-
-		.logo {
-			left: 63px;
-		}
-
-		nav button {
-			right:65px;
-		}
-
-		h1 {
-		font-size: 2.5em;
+  
+  	.contact-content h1{
+      font-size: 2.5em;
     }
 
-    p {
+	.contact-content p {
       font-size: 0.875em;
-    }
-
-    .hero-content {
-      width: 280px;
-      margin-bottom: 246px;
     }
 
 
@@ -592,9 +609,39 @@ footer {
 		width: 100%;
 	}
 
-}
+	.hero-content h1 {
+		min-width: 280px;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	.hero-content p {
+		font-size: 14px;
+	}
+  
+  	.contact-content {
+		width: 280px;
+	}
+
+	.contact-content button {
+		right: 15px;
+	}
+
+	footer p {
+		font-size: 0.875em;
+		line-height: 1.3em;
+  }
 
 /*End @320px media query */
+  
+/* less than 310px RESPONSIVE DESIGN */
+@media screen and (max-width: 310px){
+	.contact-content button {
+		right: 0px;
+		width: 240px;
+	}
+
+}
 
 /* less than 300px RESPONSIVE DESIGN */
 @media screen and (max-width: 300px){
@@ -611,16 +658,6 @@ footer {
 		right: 21px;
 	}
   
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
-	}
-}
-
-
-/* less than 300px RESPONSIVE DESIGN ------------------------------*/
-    
-@media screen and (max-width: 300px){
 	.resources-content {
 		margin-left: .625rem;
 		margin-right: .625rem;
