@@ -467,6 +467,10 @@ footer {
 	.logo {
 		left: 22px;
   }
+
+	.hero-content {
+		padding-left: 20px;
+	}
   
   .about-wrapper {
 		width: 100%;
