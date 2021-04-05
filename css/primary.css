@@ -92,6 +92,7 @@ nav button {
 	height: 40px;
 	position: relative;
 	right: 63px;
+	top: 0px;
 }
 
 .logo {
@@ -372,6 +373,13 @@ footer {
     
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px){
+
+
+	.logo img {
+		width: 160px;
+		height: 81px;
+	}
+
 	.about-wrapper {
 		align-self: center;
 	}
@@ -522,10 +530,6 @@ footer {
   
   		header {
 			padding: 11px 0px;
-		}
-
-		.logo {
-			left: 63px;
 		}
 
 		nav button {
