@@ -300,7 +300,8 @@ main {
 
 .resources-content {
   border-radius: 1.25rem;
-  background-color: #EFEFEF;
+
+  box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
   margin: 0 auto 2rem;
   padding: 1.5rem .875rem 1.5rem;
   max-width: 280px;
@@ -597,6 +598,10 @@ footer {
 	.contact-content p {
       font-size: 0.875em;
     }
+
+	.resource-icon {
+		display: none;
+	}
 
 
 }
