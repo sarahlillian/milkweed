@@ -157,8 +157,8 @@ main {
 
 .about-content {
 	display: flex;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
 	padding-bottom: clamp(64px, 8.88vw, 128px);
 	overflow-x: hidden;
 }
@@ -166,12 +166,10 @@ main {
 .about-text-then-img {
 	flex-direction: row;
 	align-self: left;
-	padding-left: 2.75rem;
 }
 
 .about-img-then-text {
 	flex-direction: row-reverse;
-	padding-right: 2.75rem;
 }
 
 .about-text {
@@ -181,12 +179,11 @@ main {
 }
 
 .about-text-left {
-	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
-	margin-left: clamp(0px, -112.5px + 15.6vw, 112px);
+	margin-right: 2rem;
 }
 
 .about-text-right {
-	margin-left: clamp(35px, -196.4px + 32.1vw, 266px);
+	margin-left: 2rem;
 }
 
 .about-content h2 {
@@ -215,7 +212,6 @@ main {
 }
 
 .about-content img {
-	margin: 0 auto;
 	width: 752px;
 	height: 564px;
 }
