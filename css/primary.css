@@ -216,8 +216,8 @@ main {
 
 .about-content img {
 	margin: 0 auto;
-	width: 528px;
-	height: 606px;
+	width: 752px;
+	height: 564px;
 }
 
 .how-it-works-wrapper {
@@ -504,8 +504,7 @@ footer {
 	.about-content img {
 		margin: 0 auto;
 		width: inherit;
-		max-width: 280px;
-		max-height: 320px;
+		height: auto;
 	}
   .how-it-works-content {
 		max-width: 456px;
