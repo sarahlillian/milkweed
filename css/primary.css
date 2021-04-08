@@ -322,13 +322,7 @@ main {
 	flex-flow: row nowrap;
 	justify-content: center;
 	width: 100%;
-}
-
-.contact-wrapper {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	width: 100%;
+	background-color: #18544E
 }
 
 .contact-content {
@@ -339,6 +333,7 @@ main {
 	padding-top: 64px;
 	padding-bottom: 64px;
 	width: 456px;
+	color: #FFF;
 }
 
 .contact-content a {
@@ -349,6 +344,9 @@ main {
 	position: relative;
 	width: 280px;
 	height: 40px;
+	color: black;
+	background-color: #FFF;
+	filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
 /* FOOTER --------------------------------------------------*/
