@@ -151,15 +151,15 @@ main {
 	max-width: 1440px;
 	align-self: auto;
 	overflow-x: hidden;
-	padding-top: clamp(96px, 32px + 8.88vw, 170px);
-	padding-bottom: 2rem;
+	padding-top: 180px;
+	padding-bottom: 20px;
 }
 
 .about-content {
 	display: flex;
 	padding-left: 4rem;
 	padding-right: 4rem;
-	padding-bottom: clamp(64px, 8.88vw, 128px);
+	padding-bottom: 160px;
 	overflow-x: hidden;
 }
 
