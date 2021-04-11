@@ -330,8 +330,8 @@ main {
   text-align: center;
 	align-self: center;
   padding: 20px;
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 112px;
+	padding-bottom: 0px;
 	width: 456px;
 	color: #FFF;
 }
@@ -341,7 +341,9 @@ main {
 }
 
 .contact-content button {
-	position: relative;
+	position: inherit;
+	margin-top: 32px;
+	margin-bottom: 112px;
 	width: 280px;
 	height: 40px;
 	color: black;
@@ -381,11 +383,7 @@ footer {
 	.about-wrapper {
 		align-self: center;
 	}
-  
-  .contact-content {
-		padding-top: 102px;
-		padding-bottom: 102px;
-	}
+
 }
     
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
@@ -514,6 +512,16 @@ footer {
   .resources-header h2 {
 		font-size: 3.1875rem;
 	}
+
+	.contact-content {
+		padding-top: 64px;
+	}
+
+	.contact-content button {
+		margin-top: 29px;
+		margin-bottom: 64px;
+	}
+
 }
   
   /* 497px RESPONSIVE DESIGN --------------------------------------------- */
@@ -521,6 +529,10 @@ footer {
 
 	.hero-content {
 		margin-bottom: 230px;
+	}
+
+	.contact-content button {
+		margin-top: 20px;
 	}
 
 }
@@ -609,6 +621,7 @@ footer {
 
 	nav button {
 		right: 21px;
+		margin-top: 20px;
 	}
 
 	.hero-wrapper {
@@ -625,12 +638,14 @@ footer {
 		font-size: 14px;
 	}
   
-  	.contact-content {
+  .contact-content {
 		width: 280px;
 	}
 
 	.contact-content button {
-		right: 15px;
+		position: relative;
+		right: 20px;
+		top: 0px;
 	}
 
 	footer p {
