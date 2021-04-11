@@ -93,6 +93,7 @@ nav button {
 	position: relative;
 	right: 63px;
 	top: 0px;
+	background-color: #F87B22;
 }
 
 .logo {
@@ -464,6 +465,8 @@ footer {
   
     nav button {
     right:20px;
+		color: #333;
+		background-color: transparent;
   }
 
   .logo {
