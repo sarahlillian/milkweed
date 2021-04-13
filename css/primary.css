@@ -131,12 +131,12 @@ main {
   max-width: 1440px;
   width: 100%;
 	align-self: center;
+	overflow: hidden;
 }
 
 .hero-content {
 	width: 528px;
-	padding-top: 120px;
-	margin-bottom: 432px;
+	padding-top: 64px;
 	padding-left: 64px;
 }
 
@@ -411,13 +411,6 @@ footer {
 /* 1151px and less responsive design --------*/
 @media screen and (max-width:1151px) {
 
-  .hero-wrapper {
-    background-image: url('../images/lgherofinal.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
 }
 
 /* 945px and less responsive design */
@@ -448,7 +441,6 @@ footer {
     padding-top: 64px;
   }
 
-
 	h1 {
 		font-size: 3.18em;
 	}
@@ -467,6 +459,10 @@ footer {
 
 	nav button {
 		right:65px;
+	}
+
+	.hero-wrapper {
+		background-size: contain;
 	}
 
 }
@@ -488,14 +484,19 @@ footer {
     padding-top: 0px;
   }
 
-  .hero-wrapper {
-    /* need to move image 32px below the p tag */
-    background-size: contain;
-  }
-
-
 	.hero-content {
 		padding-left: 20px;
+	}
+
+	.hero-img {
+		padding-top: 32px;
+		width: 92vw;
+		display: flex;
+		justify-content: center;
+	}
+
+	.hero-img img {
+		width: 100vw;
 	}
   
   .about-wrapper {
@@ -547,8 +548,11 @@ footer {
   /* 497px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 497px) {
 
-	.hero-content {
-		margin-bottom: 230px;
+	.hero-img {
+		padding-top: 32px;
+		width: 92vw;
+		display: flex;
+		justify-content: center;
 	}
 
 }
@@ -574,15 +578,13 @@ footer {
       font-size: 0.875em;
     }
 
-		.hero-wrapper {
-      background-size: 496px;
-      background-position: cover;
+    .hero-content {
+      width: fit-content;
     }
 
-    .hero-content {
-      width: 280px;
-      margin-bottom: 246px;
-    }
+		.hero-img img {
+			width: 496px;
+		}
   
   .about-content h2 {
 		font-size: 1.875rem;
