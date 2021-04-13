@@ -527,10 +527,14 @@ footer {
 		padding-bottom: 64px;
 	}
 
-  .how-it-works-content {
-		max-width: 456px;
+	.how-it-works-content-wrapper {
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
+	}
+  .how-it-works-content {
+		max-width: 456px;
+		padding-left: 0;
+		padding-right: 0;
 	}
   
   .resources-header h2 {
