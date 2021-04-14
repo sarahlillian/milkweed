@@ -410,7 +410,18 @@ footer {
 
 /* 1151px and less responsive design --------*/
 @media screen and (max-width:1151px) {
+	.hero-wrapper {
+		/* max-width: clamp(456px, 314px + 25.28vw, 638px); */
+		/* height: clamp(830px, 300px + 10vw, 1152px); */
+		/* padding-bottom: 72%; */
+		background-image: url(../images/lgherofinal.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
 
+	.hero-img img {
+		display: none;
+	}
 }
 
 /* 945px and less responsive design */
@@ -461,10 +472,6 @@ footer {
 		right:65px;
 	}
 
-	.hero-wrapper {
-		background-size: contain;
-	}
-
 }
 
 /*End @721px media query */
@@ -484,6 +491,12 @@ footer {
     padding-top: 0px;
   }
 
+	.hero-wrapper {
+		height: auto;
+		padding-bottom: 0px;
+		background-image: none;
+	}
+
 	.hero-content {
 		padding-left: 20px;
 	}
@@ -495,7 +508,8 @@ footer {
 		justify-content: center;
 	}
 
-	.hero-img img {
+	.hero-img img{
+		display: block;
 		width: 100vw;
 	}
   
