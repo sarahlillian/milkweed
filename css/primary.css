@@ -227,7 +227,7 @@ main {
 }
 
 .how-it-works-header {
-	padding: 0 1.25rem 4rem;
+	padding: 0 1.25rem 5rem;
 	width: 100%;
 	max-width: clamp(456px, 314px + 25.28vw, 638px);
 	align-self: center;
@@ -235,7 +235,7 @@ main {
 
 .how-it-works-header h2 {
 	font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
-	padding-bottom: 1.25rem;
+	padding-bottom: 2rem;
 }
 
 .how-it-works-header p {
@@ -254,7 +254,7 @@ main {
 }
 
 .how-it-works-content {
-	padding: 0 1rem 4rem;
+	padding: 0 1rem 5rem;
 	width: 100%;
 	max-width: 416px;
 }
@@ -264,7 +264,7 @@ main {
 }
 
 .how-it-works-content h3 {
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 	padding-bottom: 1rem;
 	font-size: 1.5rem;
 }
@@ -405,6 +405,28 @@ footer {
 
 }
 
+/* 945px and less responsive design */
+@media screen and (max-width: 945px) {
+	.resources-header h2 {
+		font-size: 7.08vw;
+	}
+}
+
+/* 927px and less responsive design */
+@media screen and (max-width: 927px) {
+	.how-it-works-header h2 {
+		padding-bottom: 1.25rem;
+	}
+	
+	.how-it-works-content {
+		padding-bottom: 64px;
+	}
+
+	.how-it-works-content h3 {
+		padding-top: 1rem;
+	}
+}
+
 /* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
 	.resources-wrapper {
@@ -499,10 +521,19 @@ footer {
 		width: inherit;
 		height: auto;
 	}
-  .how-it-works-content {
-		max-width: 456px;
+
+	.how-it-works-header {
+		padding-bottom: 64px;
+	}
+
+	.how-it-works-content-wrapper {
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
+	}
+  .how-it-works-content {
+		max-width: 456px;
+		padding-left: 0;
+		padding-right: 0;
 	}
   
   .resources-header h2 {
