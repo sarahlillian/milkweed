@@ -93,7 +93,16 @@ nav button {
 	position: relative;
 	right: 63px;
 	top: 0px;
+	background-color: #F5AD55;
+}
+
+nav button:hover {
+  color: #FFF;
 	background-color: #F87B22;
+}
+
+nav button:active {
+	top: 12px;
 }
 
 .logo {
@@ -102,8 +111,7 @@ nav button {
 }
 
 .logo img {
-	width: 147px;
-	height: 66px;
+  width: 183.45px;
 }
 
 
@@ -375,12 +383,6 @@ footer {
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px){
 
-
-	.logo img {
-		width: 160px;
-		height: 81px;
-	}
-
 	.about-wrapper {
 		align-self: center;
 	}
@@ -462,12 +464,23 @@ footer {
 		padding: 15px, 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   }
+
+  nav button:hover {
+    text-decoration: underline;
+  }
   
     nav button {
     right:20px;
 		color: #333;
 		background-color: transparent;
+    filter: none;
+    border: none;
+    font-weight: normal;
   }
+
+  .logo img {
+		width: 133px;
+	}
 
   .logo {
     left: 20px;
