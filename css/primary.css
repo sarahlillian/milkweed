@@ -295,12 +295,13 @@ main {
 }
 
 .resources-header h2 {
-  font-size: 4.1875rem;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
 .resources-content {
   border-radius: 1.25rem;
-  background-color: #EFEFEF;
+
+  box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
   margin: 0 auto 2rem;
   padding: 1.5rem .875rem 1.5rem;
   max-width: 280px;
@@ -408,14 +409,7 @@ footer {
 
 }
 
-/* 945px and less responsive design */
-@media screen and (max-width: 945px) {
-	.resources-header h2 {
-		font-size: 7.08vw;
-	}
-}
-
-/* 862px and less responsive design ----------------------------------- */
+/* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
 	.resources-wrapper {
 		flex-flow: column;
@@ -584,6 +578,7 @@ footer {
 
 	.resources-content h4 {
 		font-size: 1rem;
+		padding-top: 0;
 	}
 
 	.resources-content p {
@@ -597,6 +592,10 @@ footer {
 	.contact-content p {
       font-size: 0.875em;
     }
+
+	.resource-icon {
+		display: none;
+	}
 
 
 }
