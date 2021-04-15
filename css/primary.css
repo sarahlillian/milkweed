@@ -151,27 +151,25 @@ main {
 	max-width: 1440px;
 	align-self: auto;
 	overflow-x: hidden;
-	padding-top: clamp(96px, 32px + 8.88vw, 170px);
-	padding-bottom: 2rem;
+	padding-top: 180px;
+	padding-bottom: 20px;
 }
 
 .about-content {
 	display: flex;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	padding-bottom: clamp(64px, 8.88vw, 128px);
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-bottom: 160px;
 	overflow-x: hidden;
 }
 
 .about-text-then-img {
 	flex-direction: row;
 	align-self: left;
-	padding-left: 2.75rem;
 }
 
 .about-img-then-text {
 	flex-direction: row-reverse;
-	padding-right: 2.75rem;
 }
 
 .about-text {
@@ -181,12 +179,11 @@ main {
 }
 
 .about-text-left {
-	margin-right: clamp(32px, -80.5px + 15.6vw, 144px);
-	margin-left: clamp(0px, -112.5px + 15.6vw, 112px);
+	margin-right: 2rem;
 }
 
 .about-text-right {
-	margin-left: clamp(35px, -196.4px + 32.1vw, 266px);
+	margin-left: 2rem;
 }
 
 .about-content h2 {
@@ -215,9 +212,7 @@ main {
 }
 
 .about-content img {
-	margin: 0 auto;
-	width: 528px;
-	height: 606px;
+	width: 752px;
 }
 
 .how-it-works-wrapper {
@@ -468,6 +463,8 @@ footer {
   
   .about-wrapper {
 		width: 100%;
+		padding-top: 96px;
+		padding-bottom: 32px;
 	}
 	
 	.about-text-then-img {
@@ -482,6 +479,7 @@ footer {
 		width: inherit;
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
+		padding-bottom: 64px;
 	}
 
 	.about-text {
@@ -498,8 +496,7 @@ footer {
 	.about-content img {
 		margin: 0 auto;
 		width: inherit;
-		max-width: 280px;
-		max-height: 320px;
+		height: auto;
 	}
   .how-it-works-content {
 		max-width: 456px;
