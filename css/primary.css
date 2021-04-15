@@ -422,15 +422,21 @@ footer {
 }
 /* 1151px and less responsive design --------*/
 @media screen and (max-width: 1151px) {
+
+  .main-wrapper{
+    min-height: 0px;
+  }
+
   .hero-banner {
     background-image: none;
+    height: auto;
   }
 
   .hero-wrapper {
     padding-bottom: 82%;
     background-image: url(../images/lgherofinal.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 99vw;
   }
 
   .hero-img img {
