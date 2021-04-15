@@ -388,6 +388,27 @@ footer {
 		padding-top: 102px;
 		padding-bottom: 102px;
 	}
+
+}
+
+/* 1440px and less RESPONSIVE DESIGN -------------------------------- */
+@media screen and (min-width:1440){
+	.hero-banner {
+		background-image: url(../images/xlgherofinal.png);
+		background-repeat: none;
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.hero-wrapper {
+		background-image: none;
+	}
+
+	.hero-img {
+		display: none;
+	}
 }
     
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
@@ -410,10 +431,13 @@ footer {
 
 /* 1151px and less responsive design --------*/
 @media screen and (max-width:1151px) {
+
+	.hero-banner {
+		background-image: none;
+	}
+
 	.hero-wrapper {
-		/* max-width: clamp(456px, 314px + 25.28vw, 638px); */
-		/* height: clamp(830px, 300px + 10vw, 1152px); */
-		/* padding-bottom: 72%; */
+		padding-bottom: 82%;
 		background-image: url(../images/lgherofinal.png);
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -429,12 +453,20 @@ footer {
 	.resources-header h2 {
 		font-size: 7.08vw;
 	}
+
+	.hero-wrapper{
+		padding-bottom: 80%;
+	}
 }
 
 /* 862px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
 	.resources-wrapper {
 		flex-flow: column;
+	}
+
+	.hero-wrapper {
+		padding-bottom: 76%;
 	}
 
 	.resources-content {
