@@ -355,9 +355,9 @@ main {
   background-color: #EEEEEE;
 }
 
-button:active{
-  /* top already at 24px, 12px added on active state */
-  top: 36px;
+.contact-content button:active{
+  /* top already at 24px, 6px added on active state */
+  top: 30px;
 }
 
 /* FOOTER --------------------------------------------------*/
