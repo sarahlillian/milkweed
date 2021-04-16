@@ -314,6 +314,21 @@ main {
 	padding-bottom: 1rem;
 }
 
+.resources-arrow-div{
+	position: relative;
+}
+
+.arrow-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.arrow-hover:hover {
+	opacity: 1;
+}
+
 .contact-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
