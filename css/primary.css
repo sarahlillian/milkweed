@@ -76,7 +76,7 @@ button:hover {
 header {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 nav {
@@ -94,6 +94,16 @@ nav button {
 	position: relative;
 	right: 63px;
 	top: 0px;
+	background-color: #F5AD55;
+}
+
+nav button:hover {
+  color: #FFF;
+	background-color: #F87B22;
+}
+
+nav button:active {
+	top: 6px;
 }
 
 .logo {
@@ -102,8 +112,7 @@ nav button {
 }
 
 .logo img {
-	width: 147px;
-	height: 66px;
+  width: 183.45px;
 }
 
 
@@ -384,12 +393,6 @@ footer {
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px){
 
-
-	.logo img {
-		width: 160px;
-		height: 81px;
-	}
-
 	.about-wrapper {
 		align-self: center;
 	}
@@ -459,39 +462,54 @@ footer {
 @media screen and (max-width: 721px) {
 
 
-	h1 {
-		font-size: 3.18em;
-	}
-	
-	p {
-		font-size: 1.125em;
-	}
+  h1 {
+    font-size: 3.18em;
+  }
+  
+  p {
+    font-size: 1.125em;
+  }
 
-	header {
-		padding: 11px 0px;
-	}
+  .logo {
+    left: 64px;
+  }
 
-	.logo {
-		left: 63px;
-	}
-
-	nav button {
-		right:65px;
-	}
+  nav button {
+    right:64px;
+  }
 
 }
 
 /*End @721px media query */
-  
+
+
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
+
+  header {
+		padding: 15px, 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  }
+
+  nav button:hover {
+    text-decoration: underline;
+  }
   
-  	nav button {
-		right:24px;
+    nav button {
+    right:20px;
+		color: #333;
+		background-color: transparent;
+    filter: none;
+    border: none;
+    font-weight: normal;
+  }
+
+  .logo img {
+		width: 133px;
 	}
 
-	.logo {
-		left: 22px;
+  .logo {
+    left: 20px;
   }
 
 	.hero-content {
@@ -582,14 +600,6 @@ footer {
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
-  
-  		header {
-			padding: 11px 0px;
-		}
-
-		nav button {
-			right:65px;
-		}
 
 		h1 {
 		font-size: 2.5em;
@@ -660,6 +670,10 @@ footer {
 
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 320px) {
+
+	header {
+		padding: 14px 0px;
+	}
 
 	.logo {
 		left: 21px;
