@@ -407,14 +407,15 @@ footer {
 
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px) {
+
+	.wrapper {
+		background-size: 1440px 945px;
+	}
+
   .logo img {
     width: 160px;
     height: 81px;
   }
-
-	.hero-wrapper {
-		padding-bottom: 25vh;
-	}
 
   .about-wrapper {
     align-self: center;
@@ -588,6 +589,7 @@ footer {
   .hero-img img {
     display: block;
     width: 100vw;
+	}
 
   nav button:hover {
     text-decoration: underline;
@@ -603,7 +605,6 @@ footer {
   }
 
   .about-wrapper {
-
 		width: 100%;
 		padding-top: 96px;
 		padding-bottom: 32px;
@@ -667,6 +668,7 @@ footer {
 		margin-top: 29px;
 		margin-bottom: 64px;
 	}
+
 }
 
 
