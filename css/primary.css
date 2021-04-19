@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #404040;
 }
 
 body {
@@ -77,7 +78,7 @@ button:hover {
 header {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 nav {
@@ -90,11 +91,21 @@ nav {
 }
 
 nav button {
-  width: 96px;
-  height: 40px;
-  position: relative;
-  right: 63px;
-  top: 0px;
+	width: 96px;
+	height: 40px;
+	position: relative;
+	right: 63px;
+	top: 0px;
+	background-color: #F5AD55;
+}
+
+nav button:hover {
+  color: #FFF;
+	background-color: #F87B22;
+}
+
+nav button:active {
+	top: 6px;
 }
 
 .logo {
@@ -103,8 +114,7 @@ nav button {
 }
 
 .logo img {
-  width: 147px;
-  height: 66px;
+  width: 183.45px;
 }
 
 /* CONTENT --------------------------------------------------*/
@@ -160,6 +170,7 @@ main {
 }
 
 .about-wrapper {
+
   display: flex;
   flex-flow: column;
   max-width: 1440px;
@@ -229,9 +240,7 @@ main {
 }
 
 .about-content img {
-  margin: 0 auto;
-  width: 528px;
-  height: 606px;
+	width: 752px;
 }
 
 .how-it-works-wrapper {
@@ -245,15 +254,15 @@ main {
 }
 
 .how-it-works-header {
-  padding: 0 1.25rem 4rem;
-  width: 100%;
-  max-width: clamp(456px, 314px + 25.28vw, 638px);
-  align-self: center;
+	padding: 0 1.25rem 5rem;
+	width: 100%;
+	max-width: clamp(456px, 314px + 25.28vw, 638px);
+	align-self: center;
 }
 
 .how-it-works-header h2 {
-  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
-  padding-bottom: 1.25rem;
+	font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+	padding-bottom: 2rem;
 }
 
 .how-it-works-header p {
@@ -272,9 +281,9 @@ main {
 }
 
 .how-it-works-content {
-  padding: 0 1rem 4rem;
-  width: 100%;
-  max-width: 416px;
+	padding: 0 1rem 5rem;
+	width: 100%;
+	max-width: 416px;
 }
 
 .how-it-works-content img {
@@ -282,9 +291,9 @@ main {
 }
 
 .how-it-works-content h3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
 }
 
 .how-it-works-content p {
@@ -309,12 +318,11 @@ main {
 }
 
 .resources-header h2 {
-  font-size: 4.1875rem;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
 .resources-content {
   border-radius: 1.25rem;
-  background-color: #efefef;
   margin: 0 auto 2rem;
   padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
@@ -332,17 +340,11 @@ main {
 }
 
 .contact-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 100%;
+	background-color: #18544E
 }
 
 .contact-content {
@@ -350,9 +352,10 @@ main {
   text-align: center;
   align-self: center;
   padding: 20px;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  width: 456px;
+	padding-top: 112px;
+	padding-bottom: 0px;
+	width: 456px;
+	color: #FFF;
 }
 
 .contact-content a {
@@ -360,9 +363,23 @@ main {
 }
 
 .contact-content button {
-  position: relative;
-  width: 280px;
-  height: 40px;
+	position: relative;
+	margin-top: 32px;
+	margin-bottom: 112px;
+	width: 280px;
+	height: 56px;
+	color: #18544E;
+	background-color: #FFF;
+	filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+}
+
+.contact-content button:hover{
+  background-color: #EEEEEE;
+}
+
+.contact-content button:active{
+  /* top already at 24px, 6px added on active state */
+  top: 30px;
 }
 
 /* FOOTER --------------------------------------------------*/
@@ -375,9 +392,13 @@ footer p {
   padding: 18px, 0px;
 }
 
+.credit {
+	color: #FFF;
+}
+
 footer {
   flex-shrink: 0;
-  background-color: #333;
+  background-color: #11423D;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
@@ -399,10 +420,15 @@ footer {
     align-self: center;
   }
 
-  .contact-content {
-    padding-top: 102px;
-    padding-bottom: 102px;
+	.about-wrapper {
+		align-self: center;
+	}
+
+  .contact-content button {
+    padding-left: 0px;
+    padding-right: 0px;
   }
+
 }
 
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
@@ -456,7 +482,22 @@ footer {
   }
 }
 
-/* 862px and less responsive design ----------------------------------- */
+/* 927px and less responsive design */
+@media screen and (max-width: 927px) {
+	.how-it-works-header h2 {
+		padding-bottom: 1.25rem;
+	}
+	
+	.how-it-works-content {
+		padding-bottom: 64px;
+	}
+
+	.how-it-works-content h3 {
+		padding-top: 1rem;
+	}
+}
+
+/* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
   .resources-wrapper {
     flex-flow: column;
@@ -479,6 +520,7 @@ footer {
     padding-top: 64px;
   }
 
+  
   h1 {
     font-size: 3.18em;
   }
@@ -492,12 +534,13 @@ footer {
   }
 
   .logo {
-    left: 63px;
+    left: 64px;
   }
 
   nav button {
-    right: 65px;
+    right:64px;
   }
+
 }
 
 /*End @721px media query */
@@ -507,9 +550,18 @@ footer {
   nav button {
     right: 24px;
   }
+  
+    .logo img {
+		width: 133px;
+	}
 
   .logo {
-    left: 22px;
+    left: 20px;
+  }
+  
+   header {
+		padding: 15px, 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   }
 
   .main-wrapper {
@@ -536,19 +588,40 @@ footer {
   .hero-img img {
     display: block;
     width: 100vw;
+
+  nav button:hover {
+    text-decoration: underline;
+  }
+  
+    nav button {
+    right:20px;
+		color: #333;
+		background-color: transparent;
+    filter: none;
+    border: none;
+    font-weight: normal;
   }
 
   .about-wrapper {
-    width: 100%;
-  }
+
+		width: 100%;
+		padding-top: 96px;
+		padding-bottom: 32px;
+	}
+	
+	.about-text-then-img {
+		flex-direction: column;
+	}
 
   .about-text-then-img {
     flex-direction: column;
   }
-
-  .about-img-then-text {
-    flex-direction: column;
-  }
+	.about-content {
+		width: inherit;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		padding-bottom: 64px;
+	}
 
   .about-content {
     width: inherit;
@@ -562,27 +635,40 @@ footer {
     margin: 0;
   }
 
-  .about-img-div {
-    width: inherit;
-    padding: 0;
-  }
+	.about-content img {
+		margin: 0 auto;
+		width: inherit;
+		height: auto;
+	}
 
-  .about-content img {
-    margin: 0 auto;
-    width: inherit;
-    max-width: 280px;
-    max-height: 320px;
-  }
+	.how-it-works-header {
+		padding-bottom: 64px;
+	}
+
+	.how-it-works-content-wrapper {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
   .how-it-works-content {
-    max-width: 456px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
+		max-width: 456px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+  
   .resources-header h2 {
-    font-size: 3.1875rem;
-  }
+		font-size: 3.1875rem;
+	}
+
+	.contact-content {
+		padding-top: 64px;
+	}
+
+	.contact-content button {
+		margin-top: 29px;
+		margin-bottom: 64px;
+	}
 }
+
 
 /* 497px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 497px) {
@@ -592,6 +678,11 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+	.contact-content button {
+		margin-top: 20px;
+	}
+
 }
 
 /*End @497px media query */
@@ -606,14 +697,6 @@ footer {
     right: 65px;
   }
 
-  h1 {
-    font-size: 2.5em;
-  }
-
-  p {
-    font-size: 0.875em;
-  }
-
   .hero-content {
     width: fit-content;
   }
@@ -621,6 +704,20 @@ footer {
   .hero-img img {
     width: 496px;
   }
+
+
+		h1 {
+		font-size: 2.5em;
+    }
+
+    p {
+      font-size: 0.875em;
+    }
+
+    .hero-content {
+      width: 280px;
+      margin-bottom: 246px;
+    }
 
   .about-content h2 {
     font-size: 1.875rem;
@@ -642,10 +739,11 @@ footer {
     font-size: 1.25rem;
   }
 
-  .resources-wrapper {
-    padding-right: 1.25px;
-    padding-left: 1.25px;
-  }
+
+	.resources-content h4 {
+		font-size: 1rem;
+		padding-top: 0;
+	}
 
   .resources-header h2 {
     font-size: 2.5rem;
@@ -659,9 +757,9 @@ footer {
     font-size: 0.875rem;
   }
 
-  .contact-content h1 {
-    font-size: 2.5em;
-  }
+	.resource-icon {
+		display: none;
+	}
 
   .contact-content p {
     font-size: 0.875em;
@@ -673,14 +771,23 @@ footer {
   .logo {
     left: 21px;
   }
+	header {
+		padding: 14px 0px;
+	}
 
-  nav button {
-    right: 21px;
-  }
+	.logo {
+		left: 21px;
+	}
 
+	nav button {
+		right: 21px;
+		margin-top: 20px;
+	}
+  
   .hero-wrapper {
     width: 100%;
   }
+
 
   .hero-content h1 {
     min-width: 280px;
@@ -692,13 +799,19 @@ footer {
     font-size: 14px;
   }
 
+	.hero-content p {
+		font-size: 14px;
+	}
+  
   .contact-content {
-    width: 280px;
-  }
+		width: 280px;
+	}
 
-  .contact-content button {
-    right: 15px;
-  }
+	.contact-content button {
+		position: relative;
+		right: 20px;
+		top: 0px;
+	}
 
   footer p {
     font-size: 0.875em;
