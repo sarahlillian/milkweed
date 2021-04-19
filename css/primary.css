@@ -361,6 +361,10 @@ footer p {
 	padding: 18px, 0px;
 }
 
+.credit {
+	color: #FFF;
+}
+
 footer {
   flex-shrink: 0;
   background-color: #11423D;
