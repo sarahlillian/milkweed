@@ -126,17 +126,13 @@ main {
   justify-content: center;
 }
 
-.hero-banner {
+.wrapper {
+	width: 100vw;
   background-image: url(../images/MomandKid1440.svg);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.hero-wrapper {
-  background-image: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+	background-position-y: top;
+	background-position-x: center;
 }
 
 .hero-img {
@@ -150,6 +146,7 @@ main {
   width: 100%;
   align-self: center;
   overflow: hidden;
+	padding-bottom: 20vh;
 }
 
 .hero-content {
@@ -394,6 +391,10 @@ footer {
     height: 81px;
   }
 
+	.hero-wrapper {
+		padding-bottom: 25vh;
+	}
+
   .about-wrapper {
     align-self: center;
   }
@@ -427,7 +428,7 @@ footer {
     min-height: 0px;
   }
 
-  .hero-banner {
+  .wrapper {
     background-image: none;
     height: auto;
   }
