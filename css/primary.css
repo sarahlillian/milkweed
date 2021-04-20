@@ -551,6 +551,11 @@ footer {
   nav button {
     right: 24px;
   }
+
+	nav button:hover {
+		color: black;
+		background-color: transparent;
+	}
   
     .logo img {
 		width: 133px;
