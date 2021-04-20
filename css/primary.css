@@ -192,11 +192,11 @@ main {
 }
 
 .about-text-left {
-	margin-right: 2rem;
+	margin-right: clamp(32px, -80px + 15.6vw, 144px);
 }
 
 .about-text-right {
-	margin-left: 2rem;
+	margin-left: clamp(32px, -80px + 15.6vw, 144px);
 }
 
 .about-content h2 {
@@ -225,7 +225,7 @@ main {
 }
 
 .about-content img {
-	width: 752px;
+	width: 640px;
 }
 
 .how-it-works-wrapper {
