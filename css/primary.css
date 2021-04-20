@@ -328,6 +328,7 @@ main {
   margin: 0 auto 2rem;
   padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
+	box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
 }
 
 .resources-content h4 {
