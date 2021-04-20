@@ -272,7 +272,7 @@ main {
 }
 
 .how-it-works-content img {
-	width: 136px;
+	width: 192px;
 }
 
 .how-it-works-content h3 {
@@ -589,6 +589,10 @@ footer {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+  .how-it-works-content img {
+    width: 280px;
+  }
   
   .resources-header h2 {
 		font-size: 3.1875rem;
@@ -719,6 +723,10 @@ footer {
 	.hero-content p {
 		font-size: 14px;
 	}
+
+  .how-it-works-content img {
+    width: inherit;
+  }
   
   .contact-content {
 		width: 280px;
