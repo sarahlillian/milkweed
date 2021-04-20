@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #404040;
 }
 
 body {
@@ -14,6 +13,10 @@ body {
   justify-content: center;
   width: 100%;
   overflow: visible;
+}
+
+main {
+	color: #404040;
 }
 
 /* Content Wrapper */
@@ -76,7 +79,7 @@ button:hover {
 header {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 nav {
@@ -94,6 +97,16 @@ nav button {
 	position: relative;
 	right: 63px;
 	top: 0px;
+	background-color: #F5AD55;
+}
+
+nav button:hover {
+  color: #FFF;
+	background-color: #F87B22;
+}
+
+nav button:active {
+	top: 6px;
 }
 
 .logo {
@@ -102,8 +115,7 @@ nav button {
 }
 
 .logo img {
-	width: 147px;
-	height: 66px;
+  width: 183.45px;
 }
 
 
@@ -314,11 +326,19 @@ main {
 	padding-bottom: 1rem;
 }
 
-.contact-wrapper {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	width: 100%;
+.resources-arrow-div{
+	position: relative;
+}
+
+.arrow-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.arrow-hover:hover {
+	opacity: 1;
 }
 
 .contact-wrapper {
@@ -326,6 +346,7 @@ main {
 	flex-flow: row nowrap;
 	justify-content: center;
 	width: 100%;
+	background-color: #18544E
 }
 
 .contact-content {
@@ -333,9 +354,14 @@ main {
   text-align: center;
 	align-self: center;
   padding: 20px;
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 112px;
+	padding-bottom: 0px;
 	width: 456px;
+	color: #FFF;
+}
+
+.contact-content h1 p {
+	color: #FFF;
 }
 
 .contact-content a {
@@ -344,8 +370,22 @@ main {
 
 .contact-content button {
 	position: relative;
+	margin-top: 32px;
+	margin-bottom: 112px;
 	width: 280px;
-	height: 40px;
+	height: 56px;
+	color: #18544E;
+	background-color: #FFF !important;
+	filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+}
+
+.contact-content button:hover{
+  background-color: #EEEEEE;
+}
+
+.contact-content button:active{
+  /* top already at 24px, 6px added on active state */
+  top: 30px;
 }
 
 /* FOOTER --------------------------------------------------*/
@@ -375,20 +415,15 @@ footer {
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px){
 
-
-	.logo img {
-		width: 160px;
-		height: 81px;
-	}
-
 	.about-wrapper {
 		align-self: center;
 	}
-  
-  .contact-content {
-		padding-top: 102px;
-		padding-bottom: 102px;
-	}
+
+  .contact-content button {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 }
     
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
@@ -449,39 +484,54 @@ footer {
 @media screen and (max-width: 721px) {
 
 
-	h1 {
-		font-size: 3.18em;
-	}
-	
-	p {
-		font-size: 1.125em;
-	}
+  h1 {
+    font-size: 3.18em;
+  }
+  
+  p {
+    font-size: 1.125em;
+  }
 
-	header {
-		padding: 11px 0px;
-	}
+  .logo {
+    left: 64px;
+  }
 
-	.logo {
-		left: 63px;
-	}
-
-	nav button {
-		right:65px;
-	}
+  nav button {
+    right:64px;
+  }
 
 }
 
 /*End @721px media query */
-  
+
+
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
+
+  header {
+		padding: 15px, 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  }
+
+  nav button:hover {
+    text-decoration: underline;
+  }
   
-  	nav button {
-		right:24px;
+    nav button {
+    right:20px;
+		color: #333;
+		background-color: transparent;
+    filter: none;
+    border: none;
+    font-weight: normal;
+  }
+
+  .logo img {
+		width: 133px;
 	}
 
-	.logo {
-		left: 22px;
+  .logo {
+    left: 20px;
   }
 
 	.hero-content {
@@ -543,6 +593,16 @@ footer {
   .resources-header h2 {
 		font-size: 3.1875rem;
 	}
+
+	.contact-content {
+		padding-top: 64px;
+	}
+
+	.contact-content button {
+		margin-top: 29px;
+		margin-bottom: 64px;
+	}
+
 }
   
   /* 497px RESPONSIVE DESIGN --------------------------------------------- */
@@ -552,20 +612,16 @@ footer {
 		margin-bottom: 230px;
 	}
 
+	.contact-content button {
+		margin-top: 20px;
+	}
+
 }
 
 /*End @497px media query */
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
-  
-  		header {
-			padding: 11px 0px;
-		}
-
-		nav button {
-			right:65px;
-		}
 
 		h1 {
 		font-size: 2.5em;
@@ -637,12 +693,17 @@ footer {
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 320px) {
 
+	header {
+		padding: 14px 0px;
+	}
+
 	.logo {
 		left: 21px;
 	}
 
 	nav button {
 		right: 21px;
+		margin-top: 20px;
 	}
 
 	.hero-wrapper {
@@ -659,12 +720,14 @@ footer {
 		font-size: 14px;
 	}
   
-  	.contact-content {
+  .contact-content {
 		width: 280px;
 	}
 
 	.contact-content button {
-		right: 15px;
+		position: relative;
+		right: 20px;
+		top: 0px;
 	}
 
 	footer p {
