@@ -28,7 +28,9 @@ main {
 
 /* TYPOGRAPHY ----------*/
 /* Yusei Magic */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Yusei Magic', sans-serif;
 }
 
@@ -36,44 +38,44 @@ h1, h2, h3 {
 h1 {
   font-family: 'Yusei Magic', sans-serif;
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Poppins */
 h4 {
   font-family: 'Poppins', sans-serif;
-	font-size: 4.188em;
+  font-size: 4.188em;
   font-weight: 700;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
+  font-size: clamp(1.125rem, 0.75rem + 0.833vw, 1.5rem);
 }
 
 /* BUTTON ----------*/
 /* Button Active */
 button {
-    font-size: 0.875em;
-    font-family: 'Poppins', sans-serif; font-weight: 700;
-    letter-spacing: 0.1em;
-    background-color: #333;
-    color: #FFFFFF;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-radius: 40px;
-    position: absolute;
-    top: 24px;
-    filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+  font-size: 0.875em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: #333;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  position: absolute;
+  top: 24px;
+  filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
 /* Button Hover */
 button:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333;
 }
-
 
 /* HEADER --------------------------------------------------*/
 header {
@@ -110,14 +112,13 @@ nav button:active {
 }
 
 .logo {
-	position: relative;
-	left: 64px;
+  position: relative;
+  left: 64px;
 }
 
 .logo img {
   width: 183.45px;
 }
-
 
 /* CONTENT --------------------------------------------------*/
 
@@ -128,8 +129,8 @@ main {
 }
 
 .main-wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-wrapper {
@@ -138,57 +139,73 @@ main {
   justify-content: center;
 }
 
+.wrapper {
+	width: 100vw;
+  background-image: url(../images/MomandKid1440.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+	background-position-y: top;
+	background-position-x: center;
+}
+
+.hero-img {
+  display: none;
+}
+
 .hero-wrapper {
   display: flex;
   flex-flow: row nowrap;
   max-width: 1440px;
   width: 100%;
-	align-self: center;
+  align-self: center;
+  overflow: hidden;
+	padding-bottom: 20vh;
 }
 
 .hero-content {
-	width: 528px;
-	padding-top: 120px;
-	margin-bottom: 432px;
-	padding-left: 64px;
+  width: 528px;
+  padding-top: 64px;
+  padding-left: 64px;
 }
 
 .hero-content h1 {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-
 .about-wrapper {
-  	display: flex;
-	flex-flow: column;
-	max-width: 1440px;
-	align-self: auto;
-	overflow-x: hidden;
-	padding-top: 180px;
-	padding-bottom: 20px;
+
+  display: flex;
+  flex-flow: column;
+  max-width: 1440px;
+  align-self: auto;
+  overflow-x: hidden;
+  padding-top: clamp(96px, 32px + 8.88vw, 170px);
+  padding-bottom: 2rem;
 }
 
 .about-content {
-	display: flex;
-	padding-left: 4rem;
-	padding-right: 4rem;
-	padding-bottom: 160px;
-	overflow-x: hidden;
+  display: flex;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: clamp(64px, 8.88vw, 128px);
+  overflow-x: hidden;
 }
 
 .about-text-then-img {
-	flex-direction: row;
-	align-self: left;
+  flex-direction: row;
+  align-self: left;
+  padding-left: 2.75rem;
 }
 
 .about-img-then-text {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding-right: 2.75rem;
 }
 
 .about-text {
-	width: clamp(385px, 242px + 19.9vw, 528px);
-	align-self: center;
-	flex-shrink: 0;
+  width: clamp(385px, 242px + 19.9vw, 528px);
+  align-self: center;
+  flex-shrink: 0;
 }
 
 .about-text-left {
@@ -200,28 +217,28 @@ main {
 }
 
 .about-content h2 {
-	font-size: clamp(2.5rem, 29px + 1.53vw, 3.1875rem);
-	padding-bottom: 1.25rem;
+  font-size: clamp(2.5rem, 29px + 1.53vw, 3.1875rem);
+  padding-bottom: 1.25rem;
 }
 
 .about-content p {
-	font-size: 1.125rem;
-	padding-bottom: 2rem;
+  font-size: 1.125rem;
+  padding-bottom: 2rem;
 }
 
 .about-img-div {
-	align-content: center;
-	display: flex;
+  align-content: center;
+  display: flex;
 }
 
 .about-img-then-text img {
-	float: right;
-	overflow-x: hidden;
+  float: right;
+  overflow-x: hidden;
 }
 
 .about-text-then-img img {
-	float: left;
-	overflow-x: hidden;
+  float: left;
+  overflow-x: hidden;
 }
 
 .about-content img {
@@ -229,13 +246,13 @@ main {
 }
 
 .how-it-works-wrapper {
-	display: flex;
-	flex-flow: column;
-	max-width: 1440px;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-self: center;
+  display: flex;
+  flex-flow: column;
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .how-it-works-header {
@@ -251,18 +268,18 @@ main {
 }
 
 .how-it-works-header p {
-	font-size: clamp(1.125rem, .75rem + .833vw, 1.5rem);
+  font-size: clamp(1.125rem, 0.75rem + 0.833vw, 1.5rem);
 }
 
 .how-it-works-content-wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	max-width: 1440px;
-	width: inherit;
-	justify-content: center;
-	margin: 0 auto;
-	padding-left: 3rem;
-	padding-right: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  width: inherit;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .how-it-works-content {
@@ -282,7 +299,7 @@ main {
 }
 
 .how-it-works-content p {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .resources-wrapper {
@@ -308,22 +325,21 @@ main {
 
 .resources-content {
   border-radius: 1.25rem;
-
-  box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
   margin: 0 auto 2rem;
-  padding: 1.5rem .875rem 1.5rem;
+  padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
+	box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
 }
 
 .resources-content h4 {
   font-size: 1.125rem;
   padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .resources-content p {
-	font-size: 1rem;
-	padding-bottom: 1rem;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 .resources-arrow-div{
@@ -352,11 +368,11 @@ main {
 .contact-content {
   position: relative;
   text-align: center;
-	align-self: center;
+  align-self: center;
   padding: 20px;
 	padding-top: 112px;
 	padding-bottom: 0px;
-	width: 456px;
+	width: 500px;
 	color: #FFF;
 }
 
@@ -365,7 +381,7 @@ main {
 }
 
 .contact-content a {
-	width: inherit;
+  width: inherit;
 }
 
 .contact-content button {
@@ -375,7 +391,7 @@ main {
 	width: 280px;
 	height: 56px;
 	color: #18544E;
-	background-color: #FFF !important;
+	background-color: #FFF;
 	filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
@@ -392,10 +408,10 @@ main {
 
 footer p {
   text-align: center;
-  color: #FFF;
-	font-size: 0.875em;
-	line-height: 1.3em;
-	padding: 18px, 0px;
+  color: #fff;
+  font-size: 0.875em;
+  line-height: 1.3em;
+  padding: 18px, 0px;
 }
 
 footer a {
@@ -411,9 +427,21 @@ footer {
   padding-right: 20px;
 }
 
-    
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
+
+	.wrapper {
+		background-size: 1440px 945px;
+	}
+
+  .logo img {
+    width: 160px;
+    height: 81px;
+  }
+
+  .about-wrapper {
+    align-self: center;
+  }
 
 	.about-wrapper {
 		align-self: center;
@@ -425,30 +453,56 @@ footer {
   }
 
 }
-    
+
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
 @media screen and (max-width: 1308px) {
-	.resources-wrapper {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
+  .resources-wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-	.resources-header {
-		padding-bottom: 4rem;
-	}
+  .resources-header {
+    padding-bottom: 4rem;
+  }
 
-	.resources-content {
-		margin-left: 2rem;
-		margin-right: 2rem;
-	}
+  .resources-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+/* 1151px and less responsive design --------*/
+@media screen and (max-width: 1151px) {
 
+  .main-wrapper{
+    min-height: 0px;
+  }
+
+  .wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .hero-wrapper {
+    padding-bottom: 82%;
+    background-image: url(../images/lgherofinal.png);
+    background-repeat: no-repeat;
+    background-size: 99vw;
+  }
+
+  .hero-img img {
+    display: none;
+  }
 }
 
 /* 945px and less responsive design */
 @media screen and (max-width: 945px) {
-	.resources-header h2 {
-		font-size: 7.08vw;
-	}
+  .resources-header h2 {
+    font-size: 7.08vw;
+  }
+
+  .hero-wrapper {
+    padding-bottom: 80%;
+  }
 }
 
 /* 927px and less responsive design */
@@ -468,28 +522,38 @@ footer {
 
 /* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
-	.resources-wrapper {
-		flex-flow: column;
-	}
+  .resources-wrapper {
+    flex-flow: column;
+  }
 
-	.resources-content {
-		margin-left: auto;
-		margin-right: auto;
+  .hero-wrapper {
+    padding-bottom: 76%;
+  }
 
-	}
+  .resources-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* 721px RESPONSIVE DESIGN --------------------------------------------- */
 
 @media screen and (max-width: 721px) {
+  .main-wrapper {
+    padding-top: 64px;
+  }
 
-
+  
   h1 {
     font-size: 3.18em;
   }
-  
+
   p {
     font-size: 1.125em;
+  }
+
+  header {
+    padding: 11px 0px;
   }
 
   .logo {
@@ -504,14 +568,55 @@ footer {
 
 /*End @721px media query */
 
-
 /* 720px and less responsive design ----------------------------------- */
 @media screen and (max-width: 720px) {
+  nav button {
+    right: 24px;
+  }
 
-  header {
+	nav button:hover {
+		color: black;
+		background-color: transparent;
+	}
+  
+    .logo img {
+		width: 133px;
+	}
+
+  .logo {
+    left: 20px;
+  }
+  
+   header {
 		padding: 15px, 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   }
+
+  .main-wrapper {
+    padding-top: 0px;
+  }
+
+  .hero-wrapper {
+    height: auto;
+    padding-bottom: 0px;
+    background-image: none;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+  }
+
+  .hero-img {
+    padding-top: 32px;
+    width: 92vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    display: block;
+    width: 100vw;
+	}
 
   nav button:hover {
     text-decoration: underline;
@@ -526,18 +631,6 @@ footer {
     font-weight: normal;
   }
 
-  .logo img {
-		width: 133px;
-	}
-
-  .logo {
-    left: 20px;
-  }
-
-	.hero-content {
-		padding-left: 20px;
-	}
-  
   .about-wrapper {
 		width: 100%;
 		padding-top: 96px;
@@ -548,10 +641,9 @@ footer {
 		flex-direction: column;
 	}
 
-	.about-img-then-text {
-		flex-direction: column;
-	}
-
+  .about-text-then-img {
+    flex-direction: column;
+  }
 	.about-content {
 		width: inherit;
 		padding-left: 1.25rem;
@@ -559,16 +651,17 @@ footer {
 		padding-bottom: 64px;
 	}
 
-	.about-text {
-		width: inherit;
-		padding: 0;
-		margin: 0;
-	}
+  .about-content {
+    width: inherit;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 
-	.about-img-div {
-		width: inherit;
-		padding: 0;
-	}
+  .about-text {
+    width: inherit;
+    padding: 0;
+    margin: 0;
+  }
 
 	.about-content img {
 		margin: 0 auto;
@@ -608,13 +701,16 @@ footer {
 	}
 
 }
-  
-  /* 497px RESPONSIVE DESIGN --------------------------------------------- */
-@media screen and (max-width: 497px) {
 
-	.hero-content {
-		margin-bottom: 230px;
-	}
+
+/* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+  .hero-img {
+    padding-top: 32px;
+    width: 92vw;
+    display: flex;
+    justify-content: center;
+  }
 
 	.contact-content button {
 		margin-top: 20px;
@@ -626,6 +722,22 @@ footer {
 
 /* 496px and less responsive design --------------------------------- */
 @media screen and (max-width: 496px) {
+  header {
+    padding: 11px 0px;
+  }
+
+  nav button {
+    right: 65px;
+  }
+
+  .hero-content {
+    width: fit-content;
+  }
+
+  .hero-img img {
+    width: 496px;
+  }
+
 
 		h1 {
 		font-size: 2.5em;
@@ -639,64 +751,59 @@ footer {
       width: 280px;
       margin-bottom: 246px;
     }
-  
+
   .about-content h2 {
-		font-size: 1.875rem;
-	}
+    font-size: 1.875rem;
+  }
 
-	.about-content p {
-		font-size: .875rem;
-	}
-  
+  .about-content p {
+    font-size: 0.875rem;
+  }
+
   .how-it-works-header h2 {
-		font-size: 2.5rem;
-	}
-	
-	.how-it-works-wrapper p {
-		font-size: .875rem;
-	}
+    font-size: 2.5rem;
+  }
 
-	.how-it-works-content h3 {
-		font-size: 1.25rem;
-	}
-    
-	.resources-wrapper {
-		padding-right: 1.25px;
-		padding-left: 1.25px;
-	}
+  .how-it-works-wrapper p {
+    font-size: 0.875rem;
+  }
 
-	.resources-header h2 {
-		font-size: 2.5rem;
-	}
+  .how-it-works-content h3 {
+    font-size: 1.25rem;
+  }
+
 
 	.resources-content h4 {
 		font-size: 1rem;
 		padding-top: 0;
 	}
 
-	.resources-content p {
-		font-size: .875rem;
-	}
-  
-  	.contact-content h1{
-      font-size: 2.5em;
-    }
+  .resources-header h2 {
+    font-size: 2.5rem;
+  }
 
-	.contact-content p {
-      font-size: 0.875em;
-    }
+  .resources-content h4 {
+    font-size: 1rem;
+  }
+
+  .resources-content p {
+    font-size: 0.875rem;
+  }
 
 	.resource-icon {
 		display: none;
 	}
 
-
+  .contact-content p {
+    font-size: 0.875em;
+  }
 }
-
 
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 320px) {
-
+  .logo {
+    left: 21px;
+  }
 	header {
 		padding: 14px 0px;
 	}
@@ -709,16 +816,21 @@ footer {
 		right: 21px;
 		margin-top: 20px;
 	}
+  
+  .hero-wrapper {
+    width: 100%;
+  }
 
-	.hero-wrapper {
-		width: 100%;
-	}
 
-	.hero-content h1 {
-		min-width: 280px;
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
+  .hero-content h1 {
+    min-width: 280px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
 
 	.hero-content p {
 		font-size: 14px;
@@ -738,40 +850,39 @@ footer {
 		top: 0px;
 	}
 
-	footer p {
-		font-size: 0.875em;
-		line-height: 1.3em;
+  footer p {
+    font-size: 0.875em;
+    line-height: 1.3em;
   }
 }
 
 /*End @320px media query */
-  
-/* less than 310px RESPONSIVE DESIGN */
-@media screen and (max-width: 310px){
-	.contact-content button {
-		right: 0px;
-		width: 240px;
-	}
 
+/* less than 310px RESPONSIVE DESIGN */
+@media screen and (max-width: 310px) {
+  .contact-content button {
+    right: 0px;
+    width: 240px;
+  }
 }
 
 /* less than 300px RESPONSIVE DESIGN */
-@media screen and (max-width: 300px){
+@media screen and (max-width: 300px) {
   .resources-content {
-    margin-left: .625rem;
-    margin-right: .625rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
   }
-  
-  .logo {
-		left: 21px;
-	}
 
-	nav button {
-		right: 21px;
-	}
-  
-	.resources-content {
-		margin-left: .625rem;
-		margin-right: .625rem;
-	}
+  .logo {
+    left: 21px;
+  }
+
+  nav button {
+    right: 21px;
+  }
+
+  .resources-content {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
 }
