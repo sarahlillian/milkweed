@@ -294,6 +294,8 @@ main {
   padding-left: 4.444%;
   padding-right: 4.444%;
   margin: 0 auto;
+  padding-bottom: clamp(72px, 10vw, 148px);
+  padding-top: clamp(24px, -48px + 10vw, 100px); 
 }
 
 .resources-header {
