@@ -162,7 +162,6 @@ main {
   	display: flex;
 	flex-flow: column;
 	max-width: 1440px;
-	align-self: auto;
 	overflow-x: hidden;
 	padding-top: 180px;
 	padding-bottom: 20px;
@@ -178,7 +177,6 @@ main {
 
 .about-text-then-img {
 	flex-direction: row;
-	align-self: left;
 }
 
 .about-img-then-text {
@@ -186,7 +184,7 @@ main {
 }
 
 .about-text {
-	width: clamp(385px, 242px + 19.9vw, 528px);
+	width: clamp(385px, 222px + 19.9vw, 528px);
 	align-self: center;
 	flex-shrink: 0;
 }
