@@ -140,7 +140,7 @@ main {
 }
 
 .wrapper {
-	width: 100vw;
+	width: 100%;
   background-image: url(../images/MomandKid1440.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -173,11 +173,9 @@ main {
 }
 
 .about-wrapper {
-
   display: flex;
   flex-flow: column;
   max-width: 1440px;
-  align-self: auto;
   overflow-x: hidden;
   padding-top: clamp(96px, 32px + 8.88vw, 170px);
   padding-bottom: 2rem;
@@ -192,8 +190,7 @@ main {
 }
 
 .about-text-then-img {
-  flex-direction: row;
-  align-self: left;
+	flex-direction: row;
   padding-left: 2.75rem;
 }
 
@@ -203,9 +200,9 @@ main {
 }
 
 .about-text {
-  width: clamp(385px, 242px + 19.9vw, 528px);
-  align-self: center;
-  flex-shrink: 0;
+	width: clamp(385px, 222px + 19.9vw, 528px);
+	align-self: center;
+	flex-shrink: 0;
 }
 
 .about-text-left {
