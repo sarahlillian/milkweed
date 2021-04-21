@@ -140,7 +140,7 @@ main {
 }
 
 .wrapper {
-	width: 100vw;
+	width: 100%;
   background-image: url(../images/MomandKid1440.svg);
   background-repeat: no-repeat;
   background-size: contain;
