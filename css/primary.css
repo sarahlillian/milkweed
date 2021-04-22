@@ -141,7 +141,7 @@ main {
 
 .wrapper {
 	width: 100vw;
-  background-image: url(../images/MomandKid1440.svg);
+  background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
   background-repeat: no-repeat;
   background-size: contain;
 	background-position-y: top;
@@ -484,7 +484,7 @@ footer {
 
   .hero-wrapper {
     padding-bottom: 82%;
-    background-image: url(../images/Mom_and_Kid.svg);
+    background-image: url(../images/Mom\ and\ Kid.svg);
     background-repeat: no-repeat;
     background-size: 99vw;
   }
