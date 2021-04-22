@@ -140,7 +140,7 @@ main {
 }
 
 .wrapper {
-	width: 100vw;
+	width: 100%;
   background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -456,6 +456,11 @@ footer {
 
 /* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
 @media screen and (max-width: 1308px) {
+
+  .wrapper {
+    background-size: 100%, 745px;
+  }
+
   .resources-wrapper {
     padding-left: 10%;
     padding-right: 10%;
