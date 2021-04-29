@@ -316,13 +316,31 @@ main {
   text-align: center;
   width: 100%;
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .resources-header h2 {
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
+.butterfly1 {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: -100px;
+  z-index: -1;
+}
+
+.butterfly2 {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: -150px;
+  z-index: -1;
+}
+
 .resources-content {
+  background-color: white;
   border-radius: 1.25rem;
   margin: 0 auto 2rem;
   padding: 1.5rem 0.875rem 1.5rem;
@@ -689,6 +707,10 @@ footer {
   .resources-header h2 {
 		font-size: 3.1875rem;
 	}
+
+  .resources-header object {
+    display: none;
+  }
 
 	.contact-content {
 		padding-top: 64px;
