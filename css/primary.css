@@ -301,48 +301,59 @@ main {
 
 .resources-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  position: relative;
   max-width: 1440px;
   width: 100%;
   justify-content: center;
-  padding-left: 4.444%;
-  padding-right: 4.444%;
-  margin: 0 auto;
+  align-self: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
   padding-bottom: clamp(72px, -8px + 11.7vw, 156px);
-  padding-top: clamp(24px, -48px + 10vw, 100px); 
+  padding-top: 176px;
+}
+
+.butterfly1 {
+  width: 220px;
+  position: absolute;
+  left: clamp(-60px, -172px + 15.58vw, 52px);
+  top: -8px;
+  z-index: -1;
+  overflow-x: hidden;
+  opacity: .15;
+}
+
+.butterfly2 {
+  width: 440px;
+  position: absolute;
+  right: clamp(-121px, -232px + 15.44vw, -10px);
+  top: -16px;
+  z-index: -1;
+  opacity: 0.15;
 }
 
 .resources-header {
   text-align: center;
   width: 100%;
-  padding-bottom: 5rem;
-  position: relative;
+  padding-bottom: 4.5rem;
 }
 
 .resources-header h2 {
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
-.butterfly1 {
-  width: 200px;
-  position: absolute;
-  right: 0;
-  top: -100px;
-  z-index: -1;
-}
-
-.butterfly2 {
-  width: 300px;
-  position: absolute;
-  left: 0;
-  top: -150px;
-  z-index: -1;
+.resources-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: inherit;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .resources-content {
   background-color: white;
   border-radius: 1.25rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
   padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
 	box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
@@ -460,10 +471,6 @@ footer {
     align-self: center;
   }
 
-	.about-wrapper {
-		align-self: center;
-	}
-
   .contact-content button {
     padding-left: 0px;
     padding-right: 0px;
@@ -471,22 +478,14 @@ footer {
 
 }
 
-/* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
-@media screen and (max-width: 1308px) {
-  .resources-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+/* 1360px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1360px) {
 
-  .resources-header {
-    padding-bottom: 4rem;
-  }
-
-  .resources-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  .resources-content-wrapper {
+    width: 700px;
   }
 }
+
 /* 1151px and less responsive design --------*/
 @media screen and (max-width: 1151px) {
 
@@ -513,10 +512,6 @@ footer {
 
 /* 945px and less responsive design */
 @media screen and (max-width: 945px) {
-  .resources-header h2 {
-    font-size: 7.08vw;
-  }
-
   .hero-wrapper {
     padding-bottom: 80%;
   }
@@ -539,12 +534,17 @@ footer {
 
 /* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
-  .resources-wrapper {
-    flex-flow: column;
-  }
-
   .hero-wrapper {
     padding-bottom: 76%;
+  }
+
+  .resources-content-wrapper {
+    flex-flow: column;
+    width: inherit;
+  }
+
+  .resources-header {
+    padding-bottom: 3.5rem;
   }
 
   .resources-content {
@@ -708,7 +708,7 @@ footer {
 		font-size: 3.1875rem;
 	}
 
-  .resources-header object {
+  .resources-wrapper object {
     display: none;
   }
 
