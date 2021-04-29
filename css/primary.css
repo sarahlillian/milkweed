@@ -141,7 +141,7 @@ main {
 
 .wrapper {
 	width: 100%;
-  background-image: url(../images/MomandKid1440.svg);
+  background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
   background-repeat: no-repeat;
   background-size: contain;
 	background-position-y: top;
@@ -159,7 +159,7 @@ main {
   width: 100%;
   align-self: center;
   overflow: hidden;
-	padding-bottom: 20vh;
+	padding-bottom: 20%;
 }
 
 .hero-content {
@@ -480,9 +480,16 @@ footer {
 
 /* 1360px and less responsive design (resource div 1x4 -> 2x2) --------- */
 @media screen and (max-width: 1360px) {
-
   .resources-content-wrapper {
     width: 700px;
+  }
+}
+  
+  
+/* 1308px and less responsive design --------- */
+@media screen and (max-width: 1308px) {
+  .wrapper {
+    background-size: 100%, 745px;
   }
 }
 
@@ -500,7 +507,7 @@ footer {
 
   .hero-wrapper {
     padding-bottom: 82%;
-    background-image: url(../images/lgherofinal.png);
+    background-image: url(../images/Mom\ and\ Kid.svg);
     background-repeat: no-repeat;
     background-size: 99vw;
   }
