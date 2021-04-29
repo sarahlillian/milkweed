@@ -228,17 +228,17 @@ main {
   display: flex;
 }
 
-.about-img-then-text img {
+.about-img-then-text object {
   float: right;
   overflow-x: hidden;
 }
 
-.about-text-then-img img {
+.about-text-then-img object {
   float: left;
   overflow-x: hidden;
 }
 
-.about-content img {
+.about-content object {
 	width: 640px;
 }
 
@@ -640,9 +640,10 @@ footer {
 		flex-direction: column;
 	}
 
-  .about-text-then-img {
+  .about-img-then-text {
     flex-direction: column;
   }
+
 	.about-content {
 		width: inherit;
 		padding-left: 1.25rem;
@@ -662,7 +663,7 @@ footer {
     margin: 0;
   }
 
-	.about-content img {
+	.about-content object {
 		margin: 0 auto;
 		width: inherit;
 		height: auto;
