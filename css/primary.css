@@ -238,7 +238,16 @@ main {
   overflow-x: hidden;
 }
 
+.about-text-then-img embed {
+  float: left;
+  overflow-x: hidden;
+}
+
 .about-content object {
+	width: 640px;
+}
+
+.about-content embed {
 	width: 640px;
 }
 
@@ -664,6 +673,12 @@ footer {
   }
 
 	.about-content object {
+		margin: 0 auto;
+		width: inherit;
+		height: auto;
+	}
+
+  .about-content embed {
 		margin: 0 auto;
 		width: inherit;
 		height: auto;
