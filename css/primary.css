@@ -645,7 +645,7 @@ footer {
 		flex-direction: column;
 	}
 
-  .about-text-then-img {
+  .about-img-then-text {
     flex-direction: column;
   }
 	.about-content {
