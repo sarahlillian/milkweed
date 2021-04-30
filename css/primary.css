@@ -311,6 +311,7 @@ main {
   padding-right: 4rem;
   padding-bottom: clamp(72px, -8px + 11.7vw, 156px);
   padding-top: 176px;
+  overflow-x: hidden;
 }
 
 .butterfly1 {
@@ -329,6 +330,7 @@ main {
   right: clamp(-121px, -232px + 15.44vw, -10px);
   top: -16px;
   z-index: -1;
+  overflow-x: hidden;
   opacity: 0.15;
 }
 
