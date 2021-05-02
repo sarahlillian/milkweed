@@ -154,11 +154,9 @@ main {
 
 .hero-wrapper {
   display: flex;
-  flex-flow: row nowrap;
-  max-width: 1440px;
-  width: 100%;
-  align-self: center;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 	padding-bottom: 20%;
 }
 
