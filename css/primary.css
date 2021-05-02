@@ -139,7 +139,7 @@ main {
   justify-content: center;
 }
 
-.wrapper {
+.header-hero {
 	width: 100%;
   background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
   background-repeat: no-repeat;
@@ -460,7 +460,7 @@ footer {
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px) {
 
-	.wrapper {
+	.header-hero {
 		background-size: 1440px 945px;
 	}
 
@@ -490,7 +490,7 @@ footer {
   
 /* 1308px and less responsive design --------- */
 @media screen and (max-width: 1308px) {
-  .wrapper {
+  .header-hero {
     background-size: 100%, 745px;
   }
 }
@@ -502,7 +502,7 @@ footer {
     min-height: 0px;
   }
 
-  .wrapper {
+  .header-hero {
     background-image: none;
     height: auto;
   }
