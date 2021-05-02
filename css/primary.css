@@ -670,6 +670,11 @@ footer {
   .about-img-then-text {
     flex-direction: column;
   }
+
+  .about-img-div {
+    width: inherit;
+  }
+
 	.about-content {
 		width: inherit;
 		padding-left: 1.25rem;
