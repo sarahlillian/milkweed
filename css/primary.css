@@ -356,12 +356,19 @@ main {
 	opacity: 1;
 }
 
+.contact-footer {
+  background-image: url(../images/grass.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 70%;
+  padding-top: 9vh;
+}
+
 .contact-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	width: 100%;
-	background-color: #18544E
 }
 
 .contact-content {
@@ -419,11 +426,31 @@ footer a {
 
 footer {
   flex-shrink: 0;
-  background-color: #11423D;
+  /* background-color: #11423D; */
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+
+/* 2700px and less RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (max-width: 2700px) {
+
+  .contact-footer {
+    padding-top: 0vh;
+  }
+
+}
+
+/* 1800px and less RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (max-width: 1800px) {
+
+  .contact-footer {
+    padding-top: 1%;
+    background-position-y: 90%;
+  }
+
 }
 
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
