@@ -356,18 +356,18 @@ main {
 	opacity: 1;
 }
 
-.contact-footer {
+.contact-wrapper {
   background-image: url(../images/grass.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0% 70%;
-  padding-top: 9vh;
+  background-size: 1440px;
+  background-position-y: bottom;
+  background-position-x: center;
 }
 
 .contact-wrapper {
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+  flex-direction: column;
+	justify-content: flex-end;
 	width: 100%;
 }
 
@@ -723,7 +723,8 @@ footer {
 	}
 
 	.contact-content {
-		padding-top: 64px;
+		padding: 64px 0px;
+    width: 280px;
 	}
 
 	.contact-content button {
