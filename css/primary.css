@@ -388,11 +388,18 @@ main {
 }
 
 .contact-wrapper {
+  background-image: url(../images/grass.svg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+.contact-wrapper {
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+  flex-direction: column;
+	justify-content: flex-end;
 	width: 100%;
-	background-color: #18544E
 }
 
 .contact-content {
@@ -438,23 +445,44 @@ main {
 
 footer p {
   text-align: center;
-  color: #fff;
+  color: #c2c2c2;
   font-size: 0.875em;
   line-height: 1.3em;
   padding: 18px, 0px;
 }
 
 footer a {
-	color: #FFF;
+	color: #c2c2c2;
 }
 
 footer {
   flex-shrink: 0;
-  background-color: #11423D;
+  /* background-color: #11423D; */
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 13.54%);
+}
+
+
+/* 2700px and less RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (max-width: 2700px) {
+
+  .contact-footer {
+    padding-top: 0vh;
+  }
+
+}
+
+/* 1800px and less RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (max-width: 1800px) {
+
+  .contact-footer {
+    padding-top: 1%;
+    background-position-y: 90%;
+  }
+
 }
 
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
@@ -727,7 +755,8 @@ footer {
   }
 
 	.contact-content {
-		padding-top: 64px;
+		padding: 64px 0px;
+    width: 280px;
 	}
 
 	.contact-content button {
