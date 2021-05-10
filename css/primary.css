@@ -386,11 +386,18 @@ main {
 }
 
 .contact-wrapper {
+  background-image: url(../images/grass_final.svg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+.contact-wrapper {
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+  flex-direction: column;
+	justify-content: flex-end;
 	width: 100%;
-	background-color: #18544E
 }
 
 .contact-content {
@@ -415,7 +422,7 @@ main {
 .contact-content button {
 	position: relative;
 	margin-top: 32px;
-	margin-bottom: 112px;
+	margin-bottom: 80px;
 	width: 280px;
 	height: 56px;
 	color: #18544E;
@@ -436,24 +443,28 @@ main {
 
 footer p {
   text-align: center;
-  color: #fff;
+  color: #c2c2c2;
   font-size: 0.875em;
   line-height: 1.3em;
   padding: 18px, 0px;
+  width: 100%;
 }
 
 footer a {
-	color: #FFF;
+	color: #c2c2c2;
 }
 
 footer {
+  width: 100%;
   flex-shrink: 0;
-  background-color: #11423D;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 13.54%);
 }
+
+
 
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px) {
@@ -467,9 +478,19 @@ footer {
     align-self: center;
   }
 
+  .contact-wrapper {
+    background-size: cover;
+    height: unset;
+  }
+
+  .contact-content {
+    padding-top: 160px;
+  }
+
   .contact-content button {
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 80px;
   }
 }
 
@@ -720,7 +741,8 @@ footer {
   }
 
 	.contact-content {
-		padding-top: 64px;
+		/* padding: 64px 0px; */
+    width: 456px;
 	}
 
 	.contact-content button {
@@ -740,8 +762,13 @@ footer {
     justify-content: center;
   }
 
+  .contact-content {
+    margin-top: 64px;
+  }
+
 	.contact-content button {
 		margin-top: 20px;
+    margin-bottom: 64px;
 	}
 
 }
@@ -817,9 +844,40 @@ footer {
 		display: none;
 	}
 
+  .contact-wrapper {
+    align-items: center;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+		width: 280px;
+    padding-top: 48px;
+	}
+
+	.contact-content button {
+		position: relative;
+		top: 0px;
+    margin-bottom: 32px;
+    width: 280px;
+	}
+
   .contact-content p {
     font-size: 0.875em;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    width: 280px;
+  }
+
 }
 
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
@@ -862,16 +920,7 @@ footer {
   .how-it-works-content img {
     width: inherit;
   }
-  
-  .contact-content {
-		width: 280px;
-	}
 
-	.contact-content button {
-		position: relative;
-		right: 20px;
-		top: 0px;
-	}
 
   footer p {
     font-size: 0.875em;
