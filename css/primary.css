@@ -89,7 +89,6 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
   width: 100%;
 }
 
@@ -139,11 +138,12 @@ main {
   justify-content: center;
 }
 
-.wrapper {
+.header-hero {
 	width: 100%;
+  height: 65vw;
   background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100vw;
 	background-position-y: top;
 	background-position-x: center;
 }
@@ -154,11 +154,9 @@ main {
 
 .hero-wrapper {
   display: flex;
-  flex-flow: row nowrap;
-  max-width: 1440px;
-  width: 100%;
-  align-self: center;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 	padding-bottom: 20%;
 }
 
@@ -301,30 +299,61 @@ main {
 
 .resources-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  position: relative;
   max-width: 1440px;
   width: 100%;
   justify-content: center;
-  padding-left: 4.444%;
-  padding-right: 4.444%;
-  margin: 0 auto;
+  align-self: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
   padding-bottom: clamp(72px, -8px + 11.7vw, 156px);
-  padding-top: clamp(24px, -48px + 10vw, 100px); 
+  padding-top: 176px;
+  overflow-x: hidden;
+}
+
+.butterfly1 {
+  width: 220px;
+  position: absolute;
+  left: clamp(-60px, -172px + 15.58vw, 52px);
+  top: -8px;
+  z-index: -1;
+  overflow-x: hidden;
+  opacity: .15;
+}
+
+.butterfly2 {
+  width: 440px;
+  position: absolute;
+  right: clamp(-121px, -232px + 15.44vw, -10px);
+  top: -16px;
+  z-index: -1;
+  overflow-x: hidden;
+  opacity: 0.15;
 }
 
 .resources-header {
   text-align: center;
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 4.5rem;
 }
 
 .resources-header h2 {
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
 }
 
+.resources-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: inherit;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .resources-content {
+  background-color: white;
   border-radius: 1.25rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
   padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
 	box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
@@ -440,10 +469,6 @@ footer {
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px) {
 
-	.wrapper {
-		background-size: 1440px 945px;
-	}
-
   .logo img {
     width: 160px;
     height: 81px;
@@ -452,10 +477,6 @@ footer {
   .about-wrapper {
     align-self: center;
   }
-
-	.about-wrapper {
-		align-self: center;
-	}
 
   .contact-wrapper {
     background-size: cover;
@@ -471,30 +492,23 @@ footer {
     padding-right: 0px;
     margin-bottom: 80px;
   }
-
 }
 
-/* 1308px and less responsive design (resource div 1x4 -> 2x2) --------- */
+/* 1360px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1360px) {
+  .resources-content-wrapper {
+    width: 700px;
+  }
+}
+  
+  
+/* 1308px and less responsive design --------- */
 @media screen and (max-width: 1308px) {
-
-  .wrapper {
+  .header-hero {
     background-size: 100%, 745px;
   }
-
-  .resources-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .resources-header {
-    padding-bottom: 4rem;
-  }
-
-  .resources-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
 }
+
 /* 1151px and less responsive design --------*/
 @media screen and (max-width: 1151px) {
 
@@ -502,7 +516,7 @@ footer {
     min-height: 0px;
   }
 
-  .wrapper {
+  .header-hero {
     background-image: none;
     height: auto;
   }
@@ -521,10 +535,6 @@ footer {
 
 /* 945px and less responsive design */
 @media screen and (max-width: 945px) {
-  .resources-header h2 {
-    font-size: 7.08vw;
-  }
-
   .hero-wrapper {
     padding-bottom: 80%;
   }
@@ -547,12 +557,17 @@ footer {
 
 /* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
-  .resources-wrapper {
-    flex-flow: column;
-  }
-
   .hero-wrapper {
     padding-bottom: 76%;
+  }
+
+  .resources-content-wrapper {
+    flex-flow: column;
+    width: inherit;
+  }
+
+  .resources-header {
+    padding-bottom: 3.5rem;
   }
 
   .resources-content {
@@ -666,9 +681,14 @@ footer {
 		flex-direction: column;
 	}
 
-  .about-text-then-img {
+  .about-img-then-text {
     flex-direction: column;
   }
+
+  .about-img-div {
+    width: inherit;
+  }
+
 	.about-content {
 		width: inherit;
 		padding-left: 1.25rem;
@@ -716,6 +736,9 @@ footer {
 		font-size: 3.1875rem;
 	}
 
+  .resources-wrapper object {
+    display: none;
+  }
 
 	.contact-content {
 		/* padding: 64px 0px; */
@@ -758,16 +781,12 @@ footer {
     padding: 11px 0px;
   }
 
-  nav button {
-    right: 65px;
-  }
-
   .hero-content {
     width: fit-content;
   }
 
   .hero-img img {
-    width: 496px;
+    min-width: 496px;
   }
 
 
@@ -781,7 +800,6 @@ footer {
 
     .hero-content {
       width: 280px;
-      margin-bottom: 246px;
     }
 
   .about-content h2 {
