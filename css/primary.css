@@ -474,6 +474,10 @@ footer {
     height: 81px;
   }
 
+  .hero-content {
+    margin-left: 8vw;
+  }
+
   .about-wrapper {
     align-self: center;
   }
