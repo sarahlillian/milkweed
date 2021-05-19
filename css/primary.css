@@ -16,7 +16,7 @@ body {
 }
 
 main {
-	color: #404040;
+  color: #404040;
 }
 
 /* Content Wrapper */
@@ -31,25 +31,25 @@ main {
 h1,
 h2,
 h3 {
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 /* H1 */
 h1 {
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: "Yusei Magic", sans-serif;
   font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
   margin-bottom: 20px;
 }
 
 /* Poppins */
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 4.188em;
   font-weight: 700;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: clamp(1.125rem, 0.75rem + 0.833vw, 1.5rem);
 }
@@ -58,7 +58,7 @@ p {
 /* Button Active */
 button {
   font-size: 0.875em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
   background-color: #333;
@@ -93,21 +93,21 @@ nav {
 }
 
 nav button {
-	width: 96px;
-	height: 40px;
-	position: relative;
-	right: 63px;
-	top: 0px;
-	background-color: #F5AD55;
+  width: 96px;
+  height: 40px;
+  position: relative;
+  right: 63px;
+  top: 0px;
+  background-color: #f5ad55;
 }
 
 nav button:hover {
-  color: #FFF;
-	background-color: #F87B22;
+  color: #fff;
+  background-color: #f87b22;
 }
 
 nav button:active {
-	top: 6px;
+  top: 6px;
 }
 
 .logo {
@@ -139,13 +139,13 @@ main {
 }
 
 .header-hero {
-	width: 100%;
+  width: 100%;
   height: 65vw;
-  background-image: url(../images/Mom\ and\ Kid\ 1440\ \(1\).svg);
+  background-image: url(../images/Mom\and\Kid\1440\\(1\).svg);
   background-repeat: no-repeat;
   background-size: 100vw;
-	background-position-y: top;
-	background-position-x: center;
+  background-position-y: top;
+  background-position-x: center;
 }
 
 .hero-img {
@@ -157,7 +157,7 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-	padding-bottom: 20%;
+  padding-bottom: 20%;
 }
 
 .hero-content {
@@ -188,7 +188,7 @@ main {
 }
 
 .about-text-then-img {
-	flex-direction: row;
+  flex-direction: row;
   padding-left: 2.75rem;
 }
 
@@ -198,17 +198,17 @@ main {
 }
 
 .about-text {
-	width: clamp(385px, 222px + 19.9vw, 528px);
-	align-self: center;
-	flex-shrink: 0;
+  width: clamp(385px, 222px + 19.9vw, 528px);
+  align-self: center;
+  flex-shrink: 0;
 }
 
 .about-text-left {
-	margin-right: clamp(32px, -80px + 15.6vw, 144px);
+  margin-right: clamp(32px, -80px + 15.6vw, 144px);
 }
 
 .about-text-right {
-	margin-left: clamp(32px, -80px + 15.6vw, 144px);
+  margin-left: clamp(32px, -80px + 15.6vw, 144px);
 }
 
 .about-content h2 {
@@ -237,7 +237,7 @@ main {
 }
 
 .about-content img {
-	width: 640px;
+  width: 640px;
 }
 
 .how-it-works-wrapper {
@@ -251,15 +251,15 @@ main {
 }
 
 .how-it-works-header {
-	padding: 0 1.25rem 5rem;
-	width: 100%;
-	max-width: clamp(456px, 314px + 25.28vw, 638px);
-	align-self: center;
+  padding: 0 1.25rem 5rem;
+  width: 100%;
+  max-width: clamp(456px, 314px + 25.28vw, 638px);
+  align-self: center;
 }
 
 .how-it-works-header h2 {
-	font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
-	padding-bottom: 2rem;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+  padding-bottom: 2rem;
 }
 
 .how-it-works-header p {
@@ -278,19 +278,19 @@ main {
 }
 
 .how-it-works-content {
-	padding: 0 1rem 5rem;
-	width: 100%;
-	max-width: 416px;
+  padding: 0 1rem 5rem;
+  width: 100%;
+  max-width: 416px;
 }
 
 .how-it-works-content img {
-	width: 192px;
+  width: 192px;
 }
 
 .how-it-works-content h3 {
-	padding-top: 1.5rem;
-	padding-bottom: 1rem;
-	font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .how-it-works-content p {
@@ -319,7 +319,7 @@ main {
   top: -8px;
   z-index: -1;
   overflow-x: hidden;
-  opacity: .15;
+  opacity: 0.15;
 }
 
 .butterfly2 {
@@ -356,7 +356,7 @@ main {
   margin: 0 auto 3rem;
   padding: 1.5rem 0.875rem 1.5rem;
   max-width: 280px;
-	box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
+  box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
 }
 
 .resources-content h4 {
@@ -370,19 +370,19 @@ main {
   padding-bottom: 1rem;
 }
 
-.resources-arrow-div{
-	position: relative;
+.resources-arrow-div {
+  position: relative;
 }
 
-.arrow-hover{
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
+.arrow-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 .arrow-hover:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .contact-wrapper {
@@ -394,10 +394,10 @@ main {
 }
 
 .contact-wrapper {
-	display: flex;
+  display: flex;
   flex-direction: column;
-	justify-content: flex-end;
-	width: 100%;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .contact-content {
@@ -405,14 +405,14 @@ main {
   text-align: center;
   align-self: center;
   padding: 20px;
-	padding-top: 112px;
-	padding-bottom: 0px;
-	width: 500px;
-	color: #FFF;
+  padding-top: 112px;
+  padding-bottom: 0px;
+  width: 500px;
+  color: #fff;
 }
 
 .contact-content h1 p {
-	color: #FFF;
+  color: #fff;
 }
 
 .contact-content a {
@@ -420,21 +420,21 @@ main {
 }
 
 .contact-content button {
-	position: relative;
-	margin-top: 32px;
-	margin-bottom: 80px;
-	width: 280px;
-	height: 56px;
-	color: #18544E;
-	background-color: #FFF;
-	filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 80px;
+  width: 280px;
+  height: 56px;
+  color: #18544e;
+  background-color: #fff;
+  filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
 }
 
-.contact-content button:hover{
-  background-color: #EEEEEE;
+.contact-content button:hover {
+  background-color: #eeeeee;
 }
 
-.contact-content button:active{
+.contact-content button:active {
   /* top already at 24px, 6px added on active state */
   top: 30px;
 }
@@ -451,7 +451,7 @@ footer p {
 }
 
 footer a {
-	color: #c2c2c2;
+  color: #c2c2c2;
 }
 
 footer {
@@ -461,14 +461,15 @@ footer {
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 13.54%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.05) 13.54%
+  );
 }
-
-
 
 /* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
 @media screen and (min-width: 1440px) {
-
   .logo img {
     width: 160px;
     height: 81px;
@@ -504,8 +505,7 @@ footer {
     width: 700px;
   }
 }
-  
-  
+
 /* 1308px and less responsive design --------- */
 @media screen and (max-width: 1308px) {
   .header-hero {
@@ -515,8 +515,7 @@ footer {
 
 /* 1151px and less responsive design --------*/
 @media screen and (max-width: 1151px) {
-
-  .main-wrapper{
+  .main-wrapper {
     min-height: 0px;
   }
 
@@ -546,17 +545,17 @@ footer {
 
 /* 927px and less responsive design */
 @media screen and (max-width: 927px) {
-	.how-it-works-header h2 {
-		padding-bottom: 1.25rem;
-	}
-	
-	.how-it-works-content {
-		padding-bottom: 64px;
-	}
+  .how-it-works-header h2 {
+    padding-bottom: 1.25rem;
+  }
 
-	.how-it-works-content h3 {
-		padding-top: 1rem;
-	}
+  .how-it-works-content {
+    padding-bottom: 64px;
+  }
+
+  .how-it-works-content h3 {
+    padding-top: 1rem;
+  }
 }
 
 /* 850px and less responsive design ----------------------------------- */
@@ -587,7 +586,6 @@ footer {
     padding-top: 64px;
   }
 
-  
   h1 {
     font-size: 3.18em;
   }
@@ -605,9 +603,8 @@ footer {
   }
 
   nav button {
-    right:64px;
+    right: 64px;
   }
-
 }
 
 /*End @721px media query */
@@ -618,21 +615,21 @@ footer {
     right: 24px;
   }
 
-	nav button:hover {
-		color: black;
-		background-color: transparent;
-	}
-  
-    .logo img {
-		width: 133px;
-	}
+  nav button:hover {
+    color: black;
+    background-color: transparent;
+  }
+
+  .logo img {
+    width: 133px;
+  }
 
   .logo {
     left: 20px;
   }
-  
-   header {
-		padding: 15px, 0px;
+
+  header {
+    padding: 15px, 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   }
 
@@ -660,30 +657,30 @@ footer {
   .hero-img img {
     display: block;
     width: 100vw;
-	}
+  }
 
   nav button:hover {
     text-decoration: underline;
   }
-  
-    nav button {
-    right:20px;
-		color: #333;
-		background-color: transparent;
+
+  nav button {
+    right: 20px;
+    color: #333;
+    background-color: transparent;
     filter: none;
     border: none;
     font-weight: normal;
   }
 
   .about-wrapper {
-		width: 100%;
-		padding-top: 96px;
-		padding-bottom: 32px;
-	}
-	
-	.about-text-then-img {
-		flex-direction: column;
-	}
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 32px;
+  }
+
+  .about-text-then-img {
+    flex-direction: column;
+  }
 
   .about-img-then-text {
     flex-direction: column;
@@ -693,12 +690,12 @@ footer {
     width: inherit;
   }
 
-	.about-content {
-		width: inherit;
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
-		padding-bottom: 64px;
-	}
+  .about-content {
+    width: inherit;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 64px;
+  }
 
   .about-content {
     width: inherit;
@@ -712,50 +709,52 @@ footer {
     margin: 0;
   }
 
-	.about-content img {
-		margin: 0 auto;
-		width: inherit;
-		height: auto;
-	}
+  .about-content img {
+    margin: 0 auto;
+    width: inherit;
+    height: auto;
+  }
 
-	.how-it-works-header {
-		padding-bottom: 64px;
-	}
+  .how-it-works-header {
+    padding-bottom: 64px;
+  }
 
-	.how-it-works-content-wrapper {
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
-	}
+  .how-it-works-content-wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   .how-it-works-content {
-		max-width: 456px;
-		padding-left: 0;
-		padding-right: 0;
-	}
+    max-width: 456px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .how-it-works-content img {
     width: 280px;
   }
-  
+
   .resources-header h2 {
-		font-size: 3.1875rem;
-	}
+    font-size: 3.1875rem;
+  }
 
   .resources-wrapper object {
     display: none;
   }
 
-	.contact-content {
-		/* padding: 64px 0px; */
+  .resources-wrapper {
+    padding-top: 2rem;
+  }
+
+  .contact-content {
+    /* padding: 64px 0px; */
     width: 456px;
-	}
+  }
 
-	.contact-content button {
-		margin-top: 29px;
-		margin-bottom: 64px;
-	}
-
+  .contact-content button {
+    margin-top: 29px;
+    margin-bottom: 64px;
+  }
 }
-
 
 /* 497px RESPONSIVE DESIGN --------------------------------------------- */
 @media screen and (max-width: 497px) {
@@ -770,11 +769,10 @@ footer {
     margin-top: 64px;
   }
 
-	.contact-content button {
-		margin-top: 20px;
+  .contact-content button {
+    margin-top: 20px;
     margin-bottom: 64px;
-	}
-
+  }
 }
 
 /*End @497px media query */
@@ -793,18 +791,17 @@ footer {
     min-width: 496px;
   }
 
+  h1 {
+    font-size: 2.5em;
+  }
 
-		h1 {
-		font-size: 2.5em;
-    }
+  p {
+    font-size: 0.875em;
+  }
 
-    p {
-      font-size: 0.875em;
-    }
-
-    .hero-content {
-      width: 280px;
-    }
+  .hero-content {
+    width: 280px;
+  }
 
   .about-content h2 {
     font-size: 1.875rem;
@@ -826,11 +823,10 @@ footer {
     font-size: 1.25rem;
   }
 
-
-	.resources-content h4 {
-		font-size: 1rem;
-		padding-top: 0;
-	}
+  .resources-content h4 {
+    font-size: 1rem;
+    padding-top: 0;
+  }
 
   .resources-header h2 {
     font-size: 2.5rem;
@@ -844,9 +840,9 @@ footer {
     font-size: 0.875rem;
   }
 
-	.resource-icon {
-		display: none;
-	}
+  .resource-icon {
+    display: none;
+  }
 
   .contact-wrapper {
     align-items: center;
@@ -857,16 +853,16 @@ footer {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-		width: 280px;
+    width: 280px;
     padding-top: 48px;
-	}
+  }
 
-	.contact-content button {
-		position: relative;
-		top: 0px;
+  .contact-content button {
+    position: relative;
+    top: 0px;
     margin-bottom: 32px;
     width: 280px;
-	}
+  }
 
   .contact-content p {
     font-size: 0.875em;
@@ -881,7 +877,6 @@ footer {
   footer p {
     width: 280px;
   }
-
 }
 
 /* 320px RESPONSIVE DESIGN --------------------------------------------- */
@@ -889,23 +884,22 @@ footer {
   .logo {
     left: 21px;
   }
-	header {
-		padding: 14px 0px;
-	}
+  header {
+    padding: 14px 0px;
+  }
 
-	.logo {
-		left: 21px;
-	}
+  .logo {
+    left: 21px;
+  }
 
-	nav button {
-		right: 21px;
-		margin-top: 20px;
-	}
-  
+  nav button {
+    right: 21px;
+    margin-top: 20px;
+  }
+
   .hero-wrapper {
     width: 100%;
   }
-
 
   .hero-content h1 {
     min-width: 280px;
@@ -917,14 +911,13 @@ footer {
     font-size: 14px;
   }
 
-	.hero-content p {
-		font-size: 14px;
-	}
+  .hero-content p {
+    font-size: 14px;
+  }
 
   .how-it-works-content img {
     width: inherit;
   }
-
 
   footer p {
     font-size: 0.875em;
