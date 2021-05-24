@@ -939,21 +939,11 @@ footer {
 
 /* less than 300px RESPONSIVE DESIGN */
 @media screen and (max-width: 300px) {
-  .resources-content {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-  }
-
   .logo {
     left: 21px;
   }
 
   nav button {
     right: 21px;
-  }
-
-  .resources-content {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
   }
 }
