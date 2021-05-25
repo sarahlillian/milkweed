@@ -166,10 +166,6 @@ main {
   padding-left: 64px;
 }
 
-.hero-content h1 {
-  padding-bottom: 20px;
-}
-
 .about-wrapper {
   display: flex;
   flex-flow: column;
@@ -895,7 +891,6 @@ footer {
 
 	nav button {
 		right: 21px;
-		margin-top: 20px;
 	}
   
   .hero-wrapper {
@@ -906,7 +901,6 @@ footer {
   .hero-content h1 {
     min-width: 280px;
     font-size: 40px;
-    margin-bottom: 20px;
   }
 
   .hero-content p {
