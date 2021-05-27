@@ -637,6 +637,7 @@ footer {
     height: auto;
     padding-bottom: 0px;
     background-image: none;
+    overflow: hidden;
   }
 
   .hero-content {
@@ -651,7 +652,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
   }
 
   .hero-img img {
