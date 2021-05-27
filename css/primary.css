@@ -648,9 +648,10 @@ footer {
 
   .hero-img {
     padding-top: 32px;
-    width: 92vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
 
   .hero-img img {
@@ -755,7 +756,6 @@ footer {
 @media screen and (max-width: 497px) {
   .hero-img {
     padding-top: 32px;
-    width: 92vw;
     display: flex;
     justify-content: center;
   }
