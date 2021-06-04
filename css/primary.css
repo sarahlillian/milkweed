@@ -161,7 +161,7 @@ main {
 }
 
 .hero-content {
-  width: 540px;
+  width: 528px;
   padding-top: 64px;
   padding-left: 64px;
 }
@@ -495,14 +495,6 @@ footer {
   .resources-content-wrapper {
     width: 700px;
   }
-
-  .hero-content {
-    width: 30vw;
-  }
-
-  .hero-content h1 {
-    width: 40vw;
-  }
 }
   
   
@@ -526,10 +518,19 @@ footer {
   }
 
   .hero-wrapper {
-    padding-bottom: 82%;
+    padding-bottom: 97%;
     background-image: url(../images/Mom\ and\ Kid.svg);
     background-repeat: no-repeat;
     background-size: 99vw;
+  }
+
+  .hero-content {
+    width: 99vw;
+    padding-right: 76px;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 45px;
   }
 
   .hero-img img {
@@ -539,9 +540,6 @@ footer {
 
 /* 945px and less responsive design */
 @media screen and (max-width: 945px) {
-  .hero-wrapper {
-    padding-bottom: 80%;
-  }
 }
 
 /* 927px and less responsive design */
@@ -562,7 +560,7 @@ footer {
 /* 850px and less responsive design ----------------------------------- */
 @media screen and (max-width: 850px) {
   .hero-wrapper {
-    padding-bottom: 76%;
+    padding-bottom: 90%;
   }
 
   .resources-content-wrapper {
@@ -608,6 +606,10 @@ footer {
     right:64px;
   }
 
+  .hero-content h1 {
+    margin-bottom: 20px;
+  }
+
 }
 
 /*End @721px media query */
@@ -648,6 +650,7 @@ footer {
 
   .hero-content {
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hero-img {
@@ -785,9 +788,6 @@ footer {
     padding: 11px 0px;
   }
 
-  .hero-content {
-    width: fit-content;
-  }
 
   .hero-img img {
     min-width: 496px;
@@ -800,10 +800,6 @@ footer {
 
     p {
       font-size: 0.875em;
-    }
-
-    .hero-content {
-      width: 280px;
     }
 
   .about-content h2 {
