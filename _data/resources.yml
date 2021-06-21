@@ -1,0 +1,16 @@
+- icon: assets/images/field-museum.png
+  name: The Field Museum
+  info: Guide to native milkweed plants for your Chicago garden
+  link: https://www.fieldmuseum.org/blog/milkweeds-can-save-monarchs-and-beautify-your-garden
+- icon: assets/images/milkweed-monarchs.png
+  name: Milkweed for Monarchs
+  info: Free milkweed seeds, coloring pages and educational resources
+  link: http://milkweedformonarchs.info/get-milkweed-seeds/
+- icon: assets/images/xerces-society.png
+  name: Xerces Society
+  info: Resources for learning about milkweed & monarch butterflies
+  link: https://xerces.org/milkweed
+- icon: assets/images/monarch-science.png
+  name: Monarch Comm. Science
+  info: Citizen science project looking at milkweed plants in Chicagoland
+  link: https://monarch-community-science-fieldmuseum.hub.arcgis.com/

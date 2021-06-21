@@ -1,0 +1,959 @@
+/* Edited by Joseph Tajaran */
+
+/* OVERALL --------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: visible;
+}
+
+main {
+  color: #404040;
+}
+
+/* Content Wrapper */
+.wrapper {
+  width: 100%;
+}
+
+/* STYLE GUIDE --------------------------------------------------*/
+
+/* TYPOGRAPHY ----------*/
+/* Yusei Magic */
+h1,
+h2,
+h3 {
+  font-family: "Yusei Magic", sans-serif;
+}
+
+/* H1 */
+h1 {
+  font-family: "Yusei Magic", sans-serif;
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+  margin-bottom: 20px;
+}
+
+/* Poppins */
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.188em;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, 0.75rem + 0.833vw, 1.5rem);
+}
+
+/* BUTTON ----------*/
+/* Button Active */
+button {
+  font-size: 0.875em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: #333;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  position: absolute;
+  top: 24px;
+  filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+}
+
+/* Button Hover */
+button:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* HEADER --------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav button {
+  width: 96px;
+  height: 40px;
+  position: relative;
+  right: 63px;
+  top: 0px;
+  background-color: #f5ad55;
+}
+
+nav button:hover {
+  color: #fff;
+  background-color: #f87b22;
+}
+
+nav button:active {
+  top: 6px;
+}
+
+.logo {
+  position: relative;
+  left: 64px;
+}
+
+.logo img {
+  width: 183.45px;
+}
+
+/* CONTENT --------------------------------------------------*/
+
+main {
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-hero {
+  width: 100%;
+  height: 65vw;
+  background-image: url(../images/MomandKid1440.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+.hero-img {
+  display: none;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 20%;
+}
+
+.hero-content {
+  width: 528px;
+  padding-top: 64px;
+  padding-left: 64px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-flow: column;
+  max-width: 1440px;
+  overflow-x: hidden;
+  padding-top: clamp(96px, 32px + 8.88vw, 170px);
+  padding-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: clamp(64px, 8.88vw, 128px);
+  overflow-x: hidden;
+}
+
+.about-text-then-img {
+  flex-direction: row;
+  padding-left: 2.75rem;
+}
+
+.about-img-then-text {
+  flex-direction: row-reverse;
+  padding-right: 2.75rem;
+}
+
+.about-text {
+  width: clamp(385px, 222px + 19.9vw, 528px);
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.about-text-left {
+  margin-right: clamp(32px, -80px + 15.6vw, 144px);
+}
+
+.about-text-right {
+  margin-left: clamp(32px, -80px + 15.6vw, 144px);
+}
+
+.about-content h2 {
+  font-size: clamp(2.5rem, 29px + 1.53vw, 3.1875rem);
+  padding-bottom: 1.25rem;
+}
+
+.about-content p {
+  font-size: 1.125rem;
+  padding-bottom: 2rem;
+}
+
+.about-img-div {
+  align-content: center;
+  display: flex;
+}
+
+.about-img-then-text img {
+  float: right;
+  overflow-x: hidden;
+}
+
+.about-text-then-img img {
+  float: left;
+  overflow-x: hidden;
+}
+
+.about-content img {
+  width: 640px;
+}
+
+.how-it-works-wrapper {
+  display: flex;
+  flex-flow: column;
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.how-it-works-header {
+  padding: 0 1.25rem 5rem;
+  width: 100%;
+  max-width: clamp(456px, 314px + 25.28vw, 638px);
+  align-self: center;
+}
+
+.how-it-works-header h2 {
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+  padding-bottom: 2rem;
+}
+
+.how-it-works-header p {
+  font-size: clamp(1.125rem, 0.75rem + 0.833vw, 1.5rem);
+}
+
+.how-it-works-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  width: inherit;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.how-it-works-content {
+  padding: 0 1rem 5rem;
+  width: 100%;
+  max-width: 416px;
+}
+
+.how-it-works-content img {
+  width: 192px;
+}
+
+.how-it-works-content h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.how-it-works-content p {
+  font-size: 1rem;
+}
+
+.resources-wrapper {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: clamp(72px, -8px + 11.7vw, 156px);
+  padding-top: 176px;
+  overflow-x: hidden;
+}
+
+.butterfly1 {
+  width: 220px;
+  position: absolute;
+  left: clamp(-60px, -172px + 15.58vw, 52px);
+  top: -8px;
+  z-index: -1;
+  overflow-x: hidden;
+  opacity: 0.15;
+}
+
+.butterfly2 {
+  width: 440px;
+  position: absolute;
+  right: clamp(-121px, -232px + 15.44vw, -10px);
+  top: -16px;
+  z-index: -1;
+  overflow-x: hidden;
+  opacity: 0.15;
+}
+
+.resources-header {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 4.5rem;
+}
+
+.resources-header h2 {
+  font-size: clamp(3.1875rem, 2.16rem + 2.29vw, 4.1875rem);
+}
+
+.resources-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: inherit;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.resources-content {
+  background-color: white;
+  border-radius: 1.25rem;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 0.875rem 1.5rem;
+  max-width: 280px;
+  box-shadow: 0px 0px 12px rgba(28, 28, 29, 0.4);
+}
+
+.resources-content h4 {
+  font-size: 1.125rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.resources-content p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.resources-arrow-div {
+  position: relative;
+}
+
+.arrow-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.arrow-hover:hover {
+  opacity: 1;
+}
+
+.contact-wrapper {
+  background-image: url(../images/grass_final.svg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.contact-content {
+  position: relative;
+  text-align: center;
+  align-self: center;
+  padding: 20px;
+  padding-top: 112px;
+  padding-bottom: 0px;
+  width: 500px;
+  color: #fff;
+}
+
+.contact-content h1 p {
+  color: #fff;
+}
+
+.contact-content a {
+  width: inherit;
+}
+
+.contact-content button {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 80px;
+  width: 280px;
+  height: 56px;
+  color: #18544e;
+  background-color: #fff;
+  filter: drop-shadow(0px 2px 0px rgba(65, 61, 69, 0.2));
+}
+
+.contact-content button:hover {
+  background-color: #eeeeee;
+}
+
+.contact-content button:active {
+  /* top already at 24px, 6px added on active state */
+  top: 30px;
+}
+
+/* FOOTER --------------------------------------------------*/
+
+footer p {
+  text-align: center;
+  color: #c2c2c2;
+  font-size: 0.875em;
+  line-height: 1.3em;
+  padding: 18px, 0px;
+  width: 100%;
+}
+
+footer a {
+  color: #c2c2c2;
+}
+
+footer {
+  width: 100%;
+  flex-shrink: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.05) 13.54%
+  );
+}
+
+/* 1440px and greater (only) RESPONSIVE DESIGN ---------------------------------- */
+@media screen and (min-width: 1440px) {
+  .logo img {
+    width: 160px;
+    height: 81px;
+  }
+
+  .hero-content {
+    margin-left: 8vw;
+  }
+
+  .about-wrapper {
+    align-self: center;
+  }
+
+  .contact-wrapper {
+    background-size: cover;
+    height: unset;
+  }
+
+  .contact-content {
+    padding-top: 160px;
+  }
+
+  .contact-content button {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 80px;
+  }
+}
+
+/* 1360px and less responsive design (resource div 1x4 -> 2x2) --------- */
+@media screen and (max-width: 1360px) {
+  .resources-content-wrapper {
+    width: 700px;
+  }
+}
+
+/* 1308px and less responsive design --------- */
+@media screen and (max-width: 1308px) {
+  .header-hero {
+    background-size: 100%, 745px;
+  }
+}
+
+/* 1151px and less responsive design --------*/
+@media screen and (max-width: 1151px) {
+  .main-wrapper {
+    min-height: 0px;
+  }
+
+  .header-hero {
+    background-image: none;
+    height: auto;
+  }
+
+  .hero-wrapper {
+    padding-bottom: 97%;
+    background-image: url(../images/Mom\ and\ Kid.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-right: 76px;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 45px;
+  }
+
+  .hero-img img {
+    display: none;
+  }
+}
+
+/* 945px and less responsive design */
+@media screen and (max-width: 945px) {
+}
+
+/* 927px and less responsive design */
+@media screen and (max-width: 927px) {
+  .how-it-works-header h2 {
+    padding-bottom: 1.25rem;
+  }
+
+  .how-it-works-content {
+    padding-bottom: 64px;
+  }
+
+  .how-it-works-content h3 {
+    padding-top: 1rem;
+  }
+}
+
+/* 850px and less responsive design ----------------------------------- */
+@media screen and (max-width: 850px) {
+  .hero-wrapper {
+    padding-bottom: 90%;
+  }
+
+  .resources-content-wrapper {
+    flex-flow: column;
+    width: inherit;
+  }
+
+  .resources-header {
+    padding-bottom: 3.5rem;
+  }
+
+  .resources-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 721px RESPONSIVE DESIGN --------------------------------------------- */
+
+@media screen and (max-width: 721px) {
+  .main-wrapper {
+    padding-top: 64px;
+  }
+
+  h1 {
+    font-size: 3.18em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
+  header {
+    padding: 11px 0px;
+  }
+
+  .logo {
+    left: 64px;
+  }
+
+  nav button {
+    right: 64px;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 20px;
+  }
+}
+
+/*End @721px media query */
+
+/* 720px and less responsive design ----------------------------------- */
+@media screen and (max-width: 720px) {
+  nav button {
+    right: 24px;
+  }
+
+  nav button:hover {
+    color: black;
+    background-color: transparent;
+  }
+
+  .logo img {
+    width: 133px;
+  }
+
+  .logo {
+    left: 20px;
+  }
+
+  header {
+    padding: 15px, 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  }
+
+  .main-wrapper {
+    padding-top: 0px;
+  }
+
+  .hero-wrapper {
+    height: auto;
+    padding-bottom: 0px;
+    background-image: none;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-img {
+    padding-top: 32px;
+    width: 92vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    display: block;
+    width: 100vw;
+  }
+
+  nav button:hover {
+    text-decoration: underline;
+  }
+
+  nav button {
+    right: 20px;
+    color: #333;
+    background-color: transparent;
+    filter: none;
+    border: none;
+    font-weight: normal;
+  }
+
+  .about-wrapper {
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 32px;
+  }
+
+  .about-text-then-img {
+    flex-direction: column;
+  }
+
+  .about-img-then-text {
+    flex-direction: column;
+  }
+
+  .about-img-div {
+    width: inherit;
+  }
+
+  .about-content {
+    width: inherit;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 64px;
+  }
+
+  .about-content {
+    width: inherit;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .about-text {
+    width: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-content img {
+    margin: 0 auto;
+    width: inherit;
+    height: auto;
+  }
+
+  .how-it-works-header {
+    padding-bottom: 64px;
+  }
+
+  .how-it-works-content-wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .how-it-works-content {
+    max-width: 456px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .how-it-works-content img {
+    width: 280px;
+  }
+
+  .resources-header h2 {
+    font-size: 3.1875rem;
+  }
+
+  .resources-wrapper object {
+    display: none;
+  }
+
+  .resources-wrapper {
+    padding-top: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-content {
+    /* padding: 64px 0px; */
+    width: 456px;
+  }
+
+  .contact-content button {
+    margin-top: 29px;
+    margin-bottom: 64px;
+  }
+}
+
+/* 497px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 497px) {
+  .contact-content {
+    margin-top: 64px;
+  }
+
+  .contact-content button {
+    margin-top: 20px;
+    margin-bottom: 64px;
+  }
+}
+
+/*End @497px media query */
+
+/* 496px and less responsive design --------------------------------- */
+@media screen and (max-width: 496px) {
+  header {
+    padding: 11px 0px;
+  }
+
+  .hero-img {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    min-width: 100%;
+  }
+
+  .hero-img img {
+    min-width: 496px;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 480px;
+  }
+
+  .hero-content p {
+    font-size: 0.875em;
+    padding-left: 20px;
+    width: 280px;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-content h2 {
+    font-size: 1.875rem;
+  }
+
+  .about-content p {
+    font-size: 0.875rem;
+  }
+
+  .how-it-works-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .how-it-works-wrapper p {
+    font-size: 0.875rem;
+  }
+
+  .how-it-works-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .resources-content h4 {
+    font-size: 1rem;
+    padding-top: 0;
+  }
+
+  .resources-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .resources-content h4 {
+    font-size: 1rem;
+  }
+
+  .resources-content p {
+    font-size: 0.875rem;
+  }
+
+  .resource-icon {
+    display: none;
+  }
+
+  .contact-wrapper {
+    align-items: center;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding-top: 48px;
+  }
+
+  .contact-content button {
+    position: relative;
+    top: 0px;
+    margin-bottom: 32px;
+    width: 280px;
+  }
+
+  .contact-content p {
+    font-size: 0.875em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    width: 280px;
+  }
+}
+
+/* 320px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 320px) {
+  .logo {
+    left: 21px;
+  }
+  header {
+    padding: 14px 0px;
+  }
+
+  .logo {
+    left: 21px;
+  }
+
+  nav button {
+    right: 21px;
+    margin-top: 20px;
+  }
+
+  .hero-wrapper {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    min-width: 280px;
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .how-it-works-content img {
+    width: inherit;
+  }
+
+  footer p {
+    font-size: 0.875em;
+    line-height: 1.3em;
+  }
+}
+
+/*End @320px media query */
+
+/* less than 310px RESPONSIVE DESIGN */
+@media screen and (max-width: 310px) {
+  .contact-content button {
+    right: 0px;
+    width: 240px;
+  }
+}
+
+/* less than 300px RESPONSIVE DESIGN */
+@media screen and (max-width: 300px) {
+  .logo {
+    left: 21px;
+  }
+
+  nav button {
+    right: 21px;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chicago Milkweed Project</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<meta name="author" content="Joseph Tajaran">
+	
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="/">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/primary.css">
+	
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Yusei+Magic&display=swap" rel="stylesheet"> 
+	
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+{% include header.html %}
+
+{{ content }}
+
+{% include contact-us.html %}
+
+{% include footer.html %}
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+
+</body>	
+</html>
