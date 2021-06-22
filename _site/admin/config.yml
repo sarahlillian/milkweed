@@ -13,16 +13,30 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About Page"
-        name: "about"
+      - label: "Home"
+        name: "home"
         file: "index.html"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - {label: 'Layout', name: 'layout', widget: hidden, default: 'default'}
+          - label: 'Hero Content'
+            name: 'Hero Content'
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: Heading, name: hero-heading, widget: string}
+              - {label: Content, name: hero-content, widget: string}
+              - {label: Image, name: hero-img, widget: image}
+   - name: 'about'
+     label: 'About Section'
+     files: 
+      -label: 'About'
+       name: 'about'
+       file: '_data/about.html'
+       fields: 
+        -label: 'About Items'
+          name: 'items'
+          wideget: 'list'
+          fields: 
+           - {label: 'Heading', name: heading, widget: string}
+           - {label: 'Description', name: desc, widget: string}
+           - {label: 'Image', name: img, widget: string}
+           - {label: 'Image Alt Text', name: alt, widget: string}
