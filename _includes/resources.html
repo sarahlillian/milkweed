@@ -1,0 +1,25 @@
+<section class="resources-wrapper">
+  <object class="butterfly1" data="assets/images/background_butterfly.svg" type="image/svg+xml"></object>
+  <object class="butterfly2" data="assets/images/background_butterfly2.svg" type="image/svg+xml"></object>
+  <div class="resources-header">
+    <h2>Resources</h2>
+    </div>
+
+  <div class="resources-content-wrapper">
+    {% for item in site.data.resources %}
+    <div class="resources-content">
+    <img class="resource-icon" src="{{ item.icon }}" alt=""/>
+      <h4>{{ item.name }}</h4>
+      <p>{{ item.info }}</p>
+      <div class="resources-arrow-div">
+        <a href="{{ item.link }}">
+          <img src="assets/images/arrow-button-default.svg" alt="arrow">
+          <img class="arrow-hover" src="assets/images/arrow-button-hover.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+      {% endfor %}
+    </div>
+
+
+</section>

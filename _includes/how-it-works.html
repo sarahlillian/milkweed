@@ -1,0 +1,16 @@
+<section class="how-it-works-wrapper">
+  <div class="how-it-works-header">
+    <h2>How it Works</h2>
+    <p>Chicago Milkweed Project will distribute milkweed seedlings in plantable pots to kids in Chicago.</p>
+  </div>
+  <div class="how-it-works-content-wrapper">
+    {% for item in site.data.how-it-works %}
+    <div class="how-it-works-content">
+      <img src="{{ item.image }}" alt="">
+      <h3>{{ item.heading }}</h3>
+      <p>{{ item.desc }}</p>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
