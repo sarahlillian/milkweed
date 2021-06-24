@@ -10,20 +10,17 @@ media_folder: "assets/images" # Media files will be stored in the repo under ima
 
 
 collections:
- - label: "Pages"
-   name: "pages"
+ - name: 'sections'
+   label: 'Sections'
    files:
-    - label: "Home"
-      name: "home"
+    - label: "Hero"
+      name: "hero content"
       file: "index.html"
       fields:
         - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'default'}
         - {label: 'Heading', name: 'hero-heading', widget: 'string'}
         - {label: 'Content', name: 'hero-content', widget: 'string'}
- - name: 'sections'
-   label: 'Sections'
-   files: 
-    - label: 'About Section'
+    - label: 'About'
       name: 'about'
       file: '_data/about.yml'
       fields: 
@@ -35,9 +32,10 @@ collections:
            - {label: 'Description', name: 'desc', widget: string}
            - {label: 'Image', name: 'img', widget: image}
            - {label: 'Image Alt Text', name: 'alt', widget: string}
-    - label: 'How it Works Section'
+    - label: 'How it Works'
       name: 'how it works'
       file: '_data/how-it-works.yml'
+      create: false
       fields: 
        - label: 'How it Works Items'
          name: 'items'
@@ -46,9 +44,10 @@ collections:
           - {label: 'Image', name: 'img', widget: image}
           - {label: 'Heading', name: 'heading', widget: string}
           - {label: 'Description', name: 'desc', widget: string}
-    - label: 'Resources Section'
+    - label: 'Resources'
       name: 'resources'
       file: '_data/resources.yml'
+      create: true
       fields: 
        - label: 'Resources'
          name: 'items'
