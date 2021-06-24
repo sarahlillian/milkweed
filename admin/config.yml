@@ -11,8 +11,8 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 
 collections:
  - label: "Pages"
-  name: "pages"
-  files:
+   name: "pages"
+   files:
     - label: "Home"
       name: "home"
       file: "index.html"
@@ -25,14 +25,14 @@ collections:
             - {label: Heading, name: hero-heading, widget: string}
             - {label: Content, name: hero-content, widget: string}
             - {label: Image, name: hero-img, widget: image}
-  - name: 'about'
-    label: 'About Section'
-    files: 
-    -label: 'About'
+ - name: 'about'
+   label: 'About Section'
+   files: 
+    - label: 'About'
       name: 'about'
       file: '_data/about.html'
       fields: 
-      -label: 'About Items'
+      - label: 'About Items'
         name: 'items'
         wideget: 'list'
         fields: 

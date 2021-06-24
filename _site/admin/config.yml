@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+ name: git-gateway
+ branch: master # Branch to update (optional; defaults to master)
 
   # This line should *not* be indented
 publish_mode: editorial_workflow
@@ -10,33 +10,33 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "index.html"
-        fields:
-          - {label: 'Layout', name: 'layout', widget: hidden, default: 'default'}
-          - label: 'Hero Content'
-            name: 'Hero Content'
-            widget: list
-            fields:
-              - {label: Heading, name: hero-heading, widget: string}
-              - {label: Content, name: hero-content, widget: string}
-              - {label: Image, name: hero-img, widget: image}
-   - name: 'about'
-     label: 'About Section'
-     files: 
-      -label: 'About'
-       name: 'about'
-       file: '_data/about.html'
-       fields: 
-        -label: 'About Items'
-          name: 'items'
-          wideget: 'list'
-          fields: 
-           - {label: 'Heading', name: heading, widget: string}
-           - {label: 'Description', name: desc, widget: string}
-           - {label: 'Image', name: img, widget: string}
-           - {label: 'Image Alt Text', name: alt, widget: string}
+ - label: "Pages"
+   name: "pages"
+   files:
+    - label: "Home"
+      name: "home"
+      file: "index.html"
+      fields:
+        - {label: 'Layout', name: 'layout', widget: hidden, default: 'default'}
+        - label: 'Hero Content'
+          name: 'Hero Content'
+          widget: list
+          fields:
+            - {label: Heading, name: hero-heading, widget: string}
+            - {label: Content, name: hero-content, widget: string}
+            - {label: Image, name: hero-img, widget: image}
+ - name: 'about'
+   label: 'About Section'
+   files: 
+    - label: 'About'
+      name: 'about'
+      file: '_data/about.html'
+      fields: 
+      - label: 'About Items'
+        name: 'items'
+        wideget: 'list'
+        fields: 
+          - {label: 'Heading', name: heading, widget: string}
+          - {label: 'Description', name: desc, widget: string}
+          - {label: 'Image', name: img, widget: string}
+          - {label: 'Image Alt Text', name: alt, widget: string}
