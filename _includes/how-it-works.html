@@ -4,7 +4,7 @@
     <p>Chicago Milkweed Project will distribute milkweed seedlings in plantable pots to kids in Chicago.</p>
   </div>
   <div class="how-it-works-content-wrapper">
-    {% for item in site.data.how-it-works %}
+    {% for item in site.data.how-it-works.items %}
     <div class="how-it-works-content">
       <img src="{{ item.image }}" alt="">
       <h3>{{ item.heading }}</h3>
