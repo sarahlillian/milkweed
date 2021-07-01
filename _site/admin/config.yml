@@ -43,7 +43,7 @@ collections:
          fields: 
           - {label: 'Image', name: 'img', widget: image}
           - {label: 'Heading', name: 'heading', widget: string}
-          - {label: 'Description', name: 'desc', widget: string}
+          - {label: 'Description', name: 'desc', widget: string} 
     - label: 'Resources'
       name: 'resources'
       file: '_data/resources.yml'
